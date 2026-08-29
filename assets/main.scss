@@ -70,18 +70,7 @@ $base-font-family: -apple-system, BlinkMacSystemFont,
     border-radius: 4px;
   }
 
-  // 目次({:toc} で生成される #markdown-toc)
-  #markdown-toc {
-    background-color: $grey-color-light;
-    border-radius: 6px;
-    padding: ($spacing-unit * 0.5) ($spacing-unit * 0.5) ($spacing-unit * 0.5) ($spacing-unit * 1.2);
-
-    li {
-      margin-bottom: 0.3em;
-    }
-  }
-
-  // 脚注(kramdown の [^1] 記法)
+  // 脚注([^1] 記法)
   .footnotes {
     margin-top: $spacing-unit;
     padding-top: $spacing-unit * 0.5;
@@ -91,7 +80,7 @@ $base-font-family: -apple-system, BlinkMacSystemFont,
   }
 
   // タスクリスト(GFM の - [ ] / - [x] 記法)
-  li.task-list-item {
+  li:has(> input[type="checkbox"]) {
     list-style: none;
 
     input[type="checkbox"] {

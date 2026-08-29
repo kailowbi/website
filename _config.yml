@@ -14,11 +14,10 @@ header_pages:
 plugins:
   - jekyll-feed
 
-markdown: kramdown
-kramdown:
-  input: GFM
-  syntax_highlighter: rouge
-  hard_wrap: false
+markdown: CommonMarkGhPages
+commonmark:
+  options: ["SMART", "FOOTNOTES"]
+  extensions: ["strikethrough", "autolink", "table", "tagfilter", "tasklist"]
 
 # デフォルトの記事レイアウトなど
 defaults:
