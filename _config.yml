@@ -7,7 +7,7 @@ url: "https://beanz.click"
 
 # ヘッダーに表示するナビゲーション(上から順に表示)
 header_pages:
-  - blog.md
+  - blog.html
   - about.md
   - privacy-policy.md
 
