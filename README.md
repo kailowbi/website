@@ -41,6 +41,13 @@ title: "記事タイトル"
 1. GitHub のリポジトリ画面 → Settings → Pages を開く
 2. "Build and deployment" の Source を `GitHub Actions` に設定(`.github/workflows/jekyll-gh-pages.yml` が `main` への push をトリガーにビルド・デプロイします)
 
+## 独自ドメインを使う場合
+
+1. リポジトリ直下に `CNAME` というファイルを作成し、中身にドメイン名(例: `example.com`)だけを1行書く
+2. Route 53 側で、そのドメインの A レコードを GitHub Pages の IP に、`www` サブドメインを使うなら CNAME レコードを `<username>.github.io` に向ける
+   (GitHub Pages の最新の IP アドレス・設定手順は https://docs.github.com/pages を参照)
+3. Settings → Pages の "Custom domain" にも同じドメインを入力し、"Enforce HTTPS" を有効にする
+
 ## ローカルプレビュー(任意)
 
 ```bash
