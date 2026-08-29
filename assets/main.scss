@@ -1,0 +1,101 @@
+---
+# minima のデフォルト main.scss を上書き。ここでは主に日本語記事を
+# Qiita/Zenn 並みに読みやすくするための変数上書き+追加スタイルを行う。
+---
+@charset "utf-8";
+
+// 日本語は行間を広めに取ったほうが読みやすいため上書き
+$base-line-height: 1.8;
+
+// 日本語フォントを明示的に指定(OS標準の游ゴシック/ヒラギノ系を優先)
+$base-font-family: -apple-system, BlinkMacSystemFont,
+  "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Yu Gothic Medium",
+  "Yu Gothic", Meiryo, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+  "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
+
+@import "minima";
+
+// ==========================================================================
+// 記事本文の追加スタイル(Qiita/Zenn などに近い見た目を目指す)
+// ==========================================================================
+
+.post-content {
+  // 大見出しは下線を入れてセクションの区切りを分かりやすく
+  h1, h2 {
+    border-bottom: 1px solid $grey-color-light;
+    padding-bottom: 0.3em;
+    margin-top: $spacing-unit * 1.5;
+  }
+
+  h3, h4, h5, h6 {
+    margin-top: $spacing-unit;
+  }
+
+  // 引用: 斜体をやめて背景色つきボックスに(和文は斜体が効かないため)
+  blockquote {
+    font-style: normal;
+    letter-spacing: normal;
+    background-color: $grey-color-light;
+    border-left: 4px solid $grey-color;
+    padding: ($spacing-unit * 0.3) ($spacing-unit * 0.5);
+  }
+
+  // テーブル: 列数が多くても崩れないようスマホでは横スクロールに
+  table {
+    display: block;
+    overflow-x: auto;
+
+    th {
+      background-color: $grey-color-light;
+      white-space: nowrap;
+    }
+  }
+
+  // コードブロック: 角丸+背景色をテーブルなどと揃えて統一感を出す
+  .highlighter-rouge,
+  pre {
+    border-radius: 6px;
+  }
+
+  .highlighter-rouge .highlight {
+    background-color: $grey-color-light;
+  }
+
+  // 画像: 記事幅に収め、中央寄せ+角丸
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: ($spacing-unit * 0.5) auto;
+    border-radius: 4px;
+  }
+
+  // 目次({:toc} で生成される #markdown-toc)
+  #markdown-toc {
+    background-color: $grey-color-light;
+    border-radius: 6px;
+    padding: ($spacing-unit * 0.5) ($spacing-unit * 0.5) ($spacing-unit * 0.5) ($spacing-unit * 1.2);
+
+    li {
+      margin-bottom: 0.3em;
+    }
+  }
+
+  // 脚注(kramdown の [^1] 記法)
+  .footnotes {
+    margin-top: $spacing-unit;
+    padding-top: $spacing-unit * 0.5;
+    border-top: 1px solid $grey-color-light;
+    @include relative-font-size(0.85);
+    color: $grey-color;
+  }
+
+  // タスクリスト(GFM の - [ ] / - [x] 記法)
+  li.task-list-item {
+    list-style: none;
+
+    input[type="checkbox"] {
+      margin-right: 0.5em;
+    }
+  }
+}
