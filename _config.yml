@@ -15,6 +15,10 @@ plugins:
   - jekyll-feed
 
 markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  hard_wrap: false
 
 # デフォルトの記事レイアウトなど
 defaults:
