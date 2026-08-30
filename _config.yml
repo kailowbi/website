@@ -2,7 +2,7 @@ title: kailowbi
 description: kailowbi の個人サイト。技術メモや日々の記録を書いています。
 theme: minima
 
-primary_color: "#424242"
+primary_color: "#8f3a3a"
 
 # 独自ドメインを使う場合はこのファイルと同じ内容の CNAME ファイルにも反映します
 url: "https://beanz.click"
