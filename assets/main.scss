@@ -15,6 +15,10 @@ $base-font-family: -apple-system, BlinkMacSystemFont,
 
 @import "minima";
 
+.site-header {
+  border-top: 5px solid {{ site.primary_color }};
+}
+
 // ==========================================================================
 // 記事本文の追加スタイル(Qiita/Zenn などに近い見た目を目指す)
 // ==========================================================================
