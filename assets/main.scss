@@ -21,8 +21,15 @@ $base-font-family: -apple-system, BlinkMacSystemFont,
 
 // Safari 26 以降は theme-color メタタグを廃止し、body の background-color を
 // タブ/ツールバー色の参照元にするため、meta タグと合わせて指定する
+// (page-content/footer は元の白背景に戻し、見た目への影響を避ける)
 body {
   background-color: {{ site.primary_color }};
+}
+
+.site-header,
+.page-content,
+.site-footer {
+  background-color: $background-color;
 }
 
 // ==========================================================================
