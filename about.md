@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-このサイトについての説明を書きます(仮の内容です)。
+技術メモや日々の記録を書いている個人サイトです。
 
-- 運営者:(仮)
-- 連絡先:(仮)
+- 運営者: kailowbi
+- 連絡先: [GitHub (@kailowbi)](https://github.com/kailowbi)

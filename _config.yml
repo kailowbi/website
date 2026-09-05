@@ -1,20 +1,25 @@
-title: サイト名(仮)
-description: 個人サイト兼ブログ(仮の説明文)
+title: kailowbi
+description: kailowbi の個人サイト。技術メモや日々の記録を書いています。
 theme: minima
 
+primary_color: "#8f3a3a"
+
 # 独自ドメインを使う場合はこのファイルと同じ内容の CNAME ファイルにも反映します
-# url: "https://example.com"
+url: "https://beanz.click"
 
 # ヘッダーに表示するナビゲーション(上から順に表示)
 header_pages:
-  - blog.md
+  - blog.html
   - about.md
   - privacy-policy.md
 
 plugins:
   - jekyll-feed
 
-markdown: kramdown
+markdown: CommonMarkGhPages
+commonmark:
+  options: ["SMART", "FOOTNOTES"]
+  extensions: ["strikethrough", "autolink", "table", "tagfilter", "tasklist"]
 
 # デフォルトの記事レイアウトなど
 defaults:
