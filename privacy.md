@@ -6,7 +6,7 @@ permalink: /privacy/
 
 ## 広告について
 
-beanz.click 配下のサービス（Clog など）では、第三者配信の広告サービス Google AdSense を利用しています。Google などの第三者配信事業者は Cookie を使い、利用者が当サイトや他のウェブサイトに過去にアクセスしたときの情報に基づいて広告を配信します。
+beanz.click 配下のサービス（Ćlog など）では、第三者配信の広告サービス Google AdSense を利用しています。Google などの第三者配信事業者は Cookie を使い、利用者が当サイトや他のウェブサイトに過去にアクセスしたときの情報に基づいて広告を配信します。
 
 パーソナライズ広告は [広告設定](https://adssettings.google.com/) で無効にできます。第三者配信事業者の Cookie は [www.aboutads.info](https://www.aboutads.info/) で無効にすることもできます。
 
