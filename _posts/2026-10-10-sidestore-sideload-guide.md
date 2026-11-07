@@ -1,5 +1,6 @@
 ---
 title: "SideStore導入ガイド"
+published: false
 ---
 
 最終更新: 2026-10-10
