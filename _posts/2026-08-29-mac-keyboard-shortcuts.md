@@ -4,7 +4,7 @@ title: "Macのキーボードショートカットを把握する"
 
 karabiner-elements でのより良いキーマッピングを求め、Macのキーボードショートカットを把握しておく。Mac の思想を知る。
 
-- Windows版はこちら: [Windowsのキーボードショートカットを把握する](https://qiita.com/kailowbi/items/35af13031f002df47c25)
+- Windows版はこちら: [Windowsのキーボードショートカットを把握する]({% post_url 2026-08-29-windows-keyboard-shortcuts %})
 - cmd + <key>は「目に見える操作」（普通のショートカット）。
 - ctrl + <key>は「目に見えない補助操作」や「カスタム用途」に使われる。エディタアプリであれば、cmd は ファイル操作で、ctrl は文字列操作的な。
 - 物理Fキーは同じキーが「メディアキー」と「本来のFキー」の2役を兼ねていて、`fn` で切り替える。デフォルトはメディアキー側が優先され、`fn + Fキー`で本来のFキーが呼び出せる（設定で優先を逆にすることも可能）。本来のFキー側もOSレベルの既定はほぼ未割り当て。
@@ -137,3 +137,5 @@ karabiner-elements でのより良いキーマッピングを求め、Macのキ�
 
 ---
 ※参考文献 https://support.apple.com/ja-jp/102650
+
+
