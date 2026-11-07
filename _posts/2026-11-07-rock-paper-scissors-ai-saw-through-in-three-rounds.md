@@ -2,8 +2,6 @@
 title: "じゃんけんの勝ち癖をAIに突かせてみたら、3回で見破られた話"
 ---
 
-# 「コンピュータ将棋」ならぬ「コンピュータじゃんけん」をJevで作ってみた話
-
 実際に遊べます → https://janken-training-app.playgroundsss.workers.dev
 
 ## きっかけ
