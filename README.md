@@ -44,7 +44,7 @@ title: "記事タイトル"
 ## ローカルプレビュー(任意)
 
 ```bash
-gem install bundler
-bundle install
-bundle exec jekyll serve
+bin/bootstrap
 ```
+
+bundler の導入・`bundle install`・`bundle exec jekyll serve` をまとめて実行します。すでに入っているものは入れ直しません。引数はそのまま `jekyll serve` に渡るので、ポートを変えるときは `bin/bootstrap --port 4001` のように指定します。
