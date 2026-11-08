@@ -17,4 +17,8 @@ permalink: /
 | [note](https://note.com/kailowbi) | 長文の考えや振り返り |
 | [X](https://x.com/seihasync) | 更新のお知らせと、記事や作ったものへの案内 |
 
+## 作ったもの
+
+- **TabReturn (Last Selected Tab)**: タブを閉じたときに、最後に選んでいたタブへ戻る Chrome 拡張機能。（[Chrome ウェブストア](https://chromewebstore.google.com/detail/tab-return-last-selected/aocnfinhcbocfcanlcmjbjkickmpbeek) / [GitHub](https://github.com/kailowbi/tab-return)）
+
 サイトについては [About](/about/) をご覧ください。
