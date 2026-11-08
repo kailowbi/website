@@ -6,5 +6,5 @@ permalink: /about/
 
 技術メモや日々の記録を書いている個人サイトです。
 
-- 運営者: kailowbi
+- 運営者: seihasync
 - 連絡先: [GitHub (@kailowbi)](https://github.com/kailowbi)
