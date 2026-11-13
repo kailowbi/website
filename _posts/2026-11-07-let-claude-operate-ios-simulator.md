@@ -3,7 +3,7 @@ title: "iOSシミュレータをClaudeに操作させる"
 ---
 
 Claude Code から iOS シミュレータ上のアプリを動かして動作確認する方法のメモ。
-playground（Unity のブロック崩し）の #87 で、computer-use MCP を使ってうまくいったときの手順をまとめた。
+Unity で作ったブロック崩しのアプリを、Claude に computer-use MCP（Claude が Mac の画面を見てマウス・キーボードを操作する仕組み）でシミュレータ上で動かしてもらい、うまくいったときの手順をまとめた。
 
 ## 2 つのやり方
 
@@ -22,13 +22,15 @@ WebView の画面も同じで、XcodeBuildMCP ではうまく操作できず、�
 
 ## computer-use での流れ
 
+`request_access` や `screenshot`、`left_click`、`computer_batch`（複数の操作をまとめて実行する）は、computer-use MCP のツール名。
+
 1. シミュレータを起動してアプリを入れる（Bash）
    ```bash
    xcrun simctl boot "iPhone 16 Pro" && open -a Simulator
    xcrun simctl install booted path/to/App.app
    xcrun simctl launch booted <bundle id>
    ```
-   playground では `bin/build-ios --simulator` がここまで全部やる
+   ビルドからここまでをスクリプトにまとめておくと、Claude に毎回同じ手順で準備してもらえる
 2. `request_access` で `Simulator` だけ許可してもらう
 3. `screenshot` で画面を撮る（許可していないアプリは隠れて写る）
 4. 画像からボタンの座標を読み、`left_click` で押す。Simulator はクリックを iOS のタッチとして渡す
@@ -44,4 +46,4 @@ WebView の画面も同じで、XcodeBuildMCP ではうまく操作できず、�
 ## Unity でシミュレータ向けにビルドするには
 
 `PlayerSettings.iOS.sdkVersion = iOSSdkVersion.SimulatorSDK` にしてから iOS 向けにビルドする。
-ProjectSettings に残さないよう、ビルド後に元へ戻す。実装例は playground の `Assets/Editor/Build/IosBuilder.cs` の `BuildIosSimulator`。
+ProjectSettings に残さないよう、ビルド後に元へ戻す。Editor スクリプトにビルド用のメソッドを用意しておき、`-executeMethod` でコマンドラインから呼べるようにしておくと、Claude からも実行できる。
