@@ -1,0 +1,29 @@
+<script>
+  // コードブロックの上に言語名とコピーボタンを付ける
+  (function () {
+    document.querySelectorAll('.post-content div.highlighter-rouge').forEach(function (block) {
+      var match = block.className.match(/language-(\S+)/);
+      var lang = match && match[1] !== 'plaintext' ? match[1] : '';
+      var header = document.createElement('div');
+      header.className = 'code-block-header';
+      var label = document.createElement('span');
+      label.textContent = lang;
+      header.appendChild(label);
+      if (navigator.clipboard) {
+        var button = document.createElement('button');
+        button.type = 'button';
+        button.className = 'code-copy-button';
+        button.textContent = 'Copy';
+        button.addEventListener('click', function () {
+          var code = block.querySelector('pre code') || block.querySelector('pre');
+          navigator.clipboard.writeText(code.innerText.replace(/\n$/, '')).then(function () {
+            button.textContent = 'Copied!';
+            setTimeout(function () { button.textContent = 'Copy'; }, 1500);
+          });
+        });
+        header.appendChild(button);
+      }
+      block.insertBefore(header, block.firstChild);
+    });
+  })();
+</script>
