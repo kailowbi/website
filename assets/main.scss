@@ -110,16 +110,6 @@ body {
     }
   }
 
-  // コードブロック: 角丸+背景色をテーブルなどと揃えて統一感を出す
-  .highlighter-rouge,
-  pre {
-    border-radius: 6px;
-  }
-
-  .highlighter-rouge .highlight {
-    background-color: $grey-color-light;
-  }
-
   // 画像: 記事幅に収め、中央寄せ+角丸
   img {
     display: block;
@@ -145,6 +135,105 @@ body {
     input[type="checkbox"] {
       margin-right: 0.5em;
     }
+  }
+}
+
+// ==========================================================================
+// コードブロック(ダーク背景+言語ラベル+コピーボタン。ラベルとボタンは code-block.html の JS で付ける)
+// ==========================================================================
+
+$code-bg: #1f2430;
+$code-fg: #e6e9ef;
+$code-font: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+
+.post-content {
+  // インラインコード: 枠をやめ、淡い背景だけにする
+  :not(pre) > code {
+    font-family: $code-font;
+    font-size: 0.875em;
+    padding: 0.15em 0.4em;
+    border: 0;
+    border-radius: 4px;
+    background-color: rgba(135, 131, 120, 0.15);
+    color: #c7254e;
+  }
+
+  div.highlighter-rouge {
+    position: relative;
+    margin: ($spacing-unit * 0.5) 0 $spacing-unit;
+    border-radius: 8px;
+    background-color: $code-bg;
+    overflow: hidden;
+  }
+
+  .code-block-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.35em 0.6em 0.35em 1em;
+    background-color: rgba(255, 255, 255, 0.05);
+    color: #9aa3b5;
+    font-family: $code-font;
+    font-size: 12px;
+    line-height: 1.6;
+  }
+
+  .code-copy-button {
+    padding: 0.15em 0.7em;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 4px;
+    background: transparent;
+    color: inherit;
+    font: inherit;
+    cursor: pointer;
+
+    &:hover {
+      color: $code-fg;
+      border-color: rgba(255, 255, 255, 0.35);
+    }
+  }
+
+  div.highlighter-rouge .highlight,
+  div.highlighter-rouge pre {
+    margin: 0;
+    border: 0;
+    border-radius: 0;
+    background-color: transparent;
+  }
+
+  div.highlighter-rouge pre {
+    padding: 1em 1.2em;
+    overflow-x: auto;
+    color: $code-fg;
+    font-family: $code-font;
+    font-size: 13px;
+    line-height: 1.6;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  pre code {
+    padding: 0;
+    border: 0;
+    background-color: transparent;
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+  }
+
+  // シンタックスハイライト(minima のライトテーマを上書き)
+  .highlight {
+    .c, .c1, .cm, .cs, .cp { color: #7f8aa0; font-style: italic; } // コメント
+    .k, .kd, .kn, .kp, .kr, .kt, .kc, .ow { color: #c792ea; font-weight: normal; } // キーワード
+    .s, .s1, .s2, .sb, .sc, .sd, .se, .sh, .si, .sx, .sr, .ss { color: #c3e88d; } // 文字列
+    .m, .mi, .mf, .mh, .mo, .il { color: #f78c6c; } // 数値
+    .nf, .fm, .nb, .bp { color: #82aaff; } // 関数・組み込み
+    .nc, .nn, .no { color: #ffcb6b; font-weight: normal; } // クラス・定数
+    .nt { color: #89ddff; } // タグ・オプション
+    .na, .nv, .vg, .vi, .vc { color: #f07178; } // 属性・変数
+    .o, .p { color: #89ddff; font-weight: normal; } // 演算子・記号
+    .err { color: $code-fg; background-color: transparent; }
+    .gd { color: #f07178; background-color: rgba(240, 113, 120, 0.15); }
+    .gi { color: #c3e88d; background-color: rgba(195, 232, 141, 0.15); }
   }
 }
 
