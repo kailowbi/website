@@ -7,7 +7,7 @@ GitHub Pages(Jekyll)で公開する個人サイト兼ブログです。
 - `index.md` — トップページ
 - `blog.md` — ブログ記事の一覧(`/blog/`)
 - `about.md` — About ページ
-- `privacy-policy.md` — プライバシーポリシー
+- `privacy-policy.md` — プライバシーポリシー（広告・Cookie の説明を含む。旧 `/privacy/` はここへリダイレクト）
 - `_posts/` — ブログ記事本体(`YYYY-MM-DD-タイトル.md` の形式)
 - `_config.yml` — サイト全体の設定
 

@@ -1,4 +1,6 @@
 title: seihasync
+lang: ja
+locale: ja_JP
 description: seihasync の個人サイト。技術メモや日々の記録を書いています。
 theme: minima
 
@@ -15,6 +17,11 @@ header_pages:
 
 plugins:
   - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-redirect-from
+
+# Google AdSense のパブリッシャー ID（ads.txt と同じもの。公開されてよい値）
+adsense_client: ca-pub-4993198530161495
 
 markdown: CommonMarkGhPages
 commonmark:
@@ -28,3 +35,13 @@ defaults:
       type: "posts"
     values:
       layout: "post"
+
+# サイトとして公開しないファイル（CLAUDE.md などがページとして出ないように）
+exclude:
+  - CLAUDE.md
+  - README.md
+  - bin/
+  - Gemfile
+  - Gemfile.lock
+  - vendor/
+  - .claude/
