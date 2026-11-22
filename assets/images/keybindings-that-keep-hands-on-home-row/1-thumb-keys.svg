@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 782 396" width="782" height="396" font-family="'Hiragino Sans','Hiragino Kaku Gothic ProN','Noto Sans JP','Noto Sans CJK JP',sans-serif">
 <rect width="782" height="396" rx="14" fill="#f6f6f4"/>
-<text x="16" y="30" font-size="17" font-weight="700" fill="#222">① commandを単押し：Enter / Backspace</text>
+<text x="16" y="30" font-size="17" font-weight="700" fill="#222">① command単押し：Enter / Backspace</text>
 <rect x="16" y="56" width="46.0" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
 <text x="21" y="68" font-size="9" fill="#9a9a96">1</text>
 <rect x="67" y="56" width="46.0" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>

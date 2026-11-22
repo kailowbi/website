@@ -10,19 +10,19 @@ Macのキーボードは、矢印キーもEnterもBackspaceも、ホームポジ
 
 前提として、Aの左に`control`があるJIS配列のMac（MacBookの内蔵キーボードやMagic Keyboard）を想定している。
 
-## 結論：図で見る
+## 全体像
 
 ![commandの単押し。左commandがEnter、右commandがBackspace](/assets/images/keybindings-that-keep-hands-on-home-row/1-thumb-keys.svg)
 
 左右の`command`は、押してすぐ離すとEnterとBackspaceになる。他のキーと一緒に押せば普通の`command`。
 
-![controlを押しながらのとき。IJKLが矢印、Pと;がPageUpとPageDown、AとEが行頭と行末、左commandがEsc](/assets/images/keybindings-that-keep-hands-on-home-row/2-control-layer.svg)
+![controlレイヤー。IJKLが矢印、Pと;がPageUpとPageDown、AとEが行頭と行末、左commandがEsc](/assets/images/keybindings-that-keep-hands-on-home-row/2-control-layer.svg)
 
-`control`を押しながらだと、右手がカーソルキーになる。
+`control`を押しているあいだは、ほかのキーの役割が切り替わる。この切り替わった状態を「レイヤー」と呼ぶことにする。controlレイヤーでは、右手がカーソルキーになる。
 
-![右commandを押しながらのとき。IとKが音量、EとDが明るさ、SとFがウィンドウの左右半分、1〜4がデスクトップの切り替え](/assets/images/keybindings-that-keep-hands-on-home-row/3-right-command-layer.svg)
+![右commandレイヤー。IとKが音量、EとDが明るさ、SとFがウィンドウの左右半分、1〜4がデスクトップの切り替え](/assets/images/keybindings-that-keep-hands-on-home-row/3-right-command-layer.svg)
 
-右`command`を押しながらだと、音量や明るさ、ウィンドウの配置を操作できる。
+右commandレイヤーでは、音量や明るさ、ウィンドウの配置を操作できる。
 
 図はキーボードを簡略化している。考え方は次の2つだけで、ここから下はなぜこう配置したかの話。
 
@@ -51,14 +51,14 @@ Aの左にある`control`を押しながら、右手の`i` / `j` / `k` / `l`で�
 
 ## 考え方2：修飾キー1つに役割は1つ
 
-キーを足していくと、どこに何を入れたか分からなくなる。なので、押しながら使う修飾キーごとに「何系の操作か」を決めてしまう。
+キーを足していくと、どこに何を入れたか分からなくなる。なので、レイヤーごとに「何系の操作か」を決めてしまう。
 
-| 押しながら使うキー | 役割 | 例 |
+| レイヤー | 役割 | 例 |
 |---|---|---|
-| `control` | カーソル（文字の上を動く） | 矢印、PageUp / PageDown、行頭 / 行末、戻る / 進む、IMEのオン / オフ |
-| 左`command` | macOS標準のショートカット | コピー、貼り付け、保存。ここは何も変えない |
-| 右`command` | 操作（Macそのものを触る） | 音量、画面の明るさ、ウィンドウを左右半分に配置 |
-| 右`command` + 左`command` | 起動 | アプリの頭文字で起動 |
+| controlレイヤー | カーソル（文字の上を動く） | 矢印、PageUp / PageDown、行頭 / 行末、戻る / 進む、IMEのオン / オフ |
+| 左`command`（レイヤーにしない） | macOS標準のショートカット | コピー、貼り付け、保存。ここは何も変えない |
+| 右commandレイヤー | 操作（Macそのものを触る） | 音量、画面の明るさ、ウィンドウを左右半分に配置 |
+| 起動レイヤー（右`command` + 左`command`） | 起動 | アプリの頭文字で起動 |
 
 左右の`command`で役割を分けているのがポイントで、右`command`はmacOS標準のショートカットには使わない。標準のショートカットは左`command`で押す、と決めてしまえば迷わない。組み合わせを混ぜることもしない（右`command` + `control`のような割り当ては作らない）。
 
@@ -91,7 +91,7 @@ Aの左にある`control`を押しながら、右手の`i` / `j` / `k` / `l`で�
 <details>
 <summary>使えなくなるcontrolキー</summary>
 
-カーソルレイヤーは全アプリで効くので、もともと`control`に割り当てられていたものが上書きされる。
+controlレイヤーは全アプリで効くので、もともと`control`に割り当てられていたものが上書きされる。
 
 - macOSのテキスト編集：`control` + `k`（行末まで削除）、`control` + `p`（前の行）、`control` + `o`（行を挿入）、`control` + `y`（貼り付け）
 - ターミナル：`control` + `l`（画面クリア）、`control` + `u` / `w`（行・単語の削除）、`control` + `p`（コマンド履歴）
@@ -113,7 +113,7 @@ Aの左にある`control`を押しながら、右手の`i` / `j` / `k` / `l`で�
 <details>
 <summary>右commandで効かなくなるショートカット</summary>
 
-右`command` + キーを操作レイヤーに使っているので、そのキーは右`command`では標準ショートカットにならない。今の割り当てでは`s`（保存）、`f`（検索）、`r`、`w`（閉じる）、`x` / `v`（切り取り / 貼り付け）、`a`（全選択）、`d`、`e`、`i`、`k`、`m`、`t`、`h`、`1`〜`4`が対象。標準ショートカットは左`command`で押す、と割り切っている。
+右commandレイヤーに使っているので、そのキーは右`command`では標準ショートカットにならない。今の割り当てでは`s`（保存）、`f`（検索）、`r`、`w`（閉じる）、`x` / `v`（切り取り / 貼り付け）、`a`（全選択）、`d`、`e`、`i`、`k`、`m`、`t`、`h`、`1`〜`4`が対象。標準ショートカットは左`command`で押す、と割り切っている。
 
 </details>
 
