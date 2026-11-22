@@ -18,7 +18,7 @@ Macのキーボードは、矢印キーもEnterもBackspaceも、ホームポジ
 
 ![controlレイヤー。IJKLが矢印、Pと;がPageUpとPageDown、AとEが行頭と行末、左commandがEsc](/assets/images/keybindings-that-keep-hands-on-home-row/2-control-layer.svg)
 
-`control`を押しているあいだは、ほかのキーの役割が切り替わる。この状態を「レイヤー」と呼ぶことにする。controlレイヤーには、アプリ内での操作を集めている。
+`control`を押しているあいだは、ほかのキーの役割が切り替わる。この状態を「レイヤー」と呼ぶことにする。controlレイヤーには、アプリ内での操作と、IMEの切り替えなどの文字入力まわりを集めている。
 
 ![右commandレイヤー。IとKが音量、EとDが明るさ、SとFがウィンドウの左右半分、1〜4がデスクトップの切り替え](/assets/images/keybindings-that-keep-hands-on-home-row/3-right-command-layer.svg)
 
@@ -54,11 +54,13 @@ Aの左にある`control`を押しながら、右手の`i` / `j` / `k` / `l`で�
 キーを足していくと、どこに何を入れたか分からなくなる。なので、レイヤーごとに「何を入れるか」の基準を決めてしまう。基準は、その操作が効く範囲。
 
 - **左`command`（そのまま）**：アプリの機能。コピーや保存など、macOS標準のショートカット。ここは何も変えない
-- **controlレイヤー**：アプリ内。矢印、PageUp / PageDown、行頭 / 行末、戻る / 進む、IMEのオン / オフ
+- **controlレイヤー**：アプリ内と文字入力。矢印、PageUp / PageDown、行頭 / 行末、戻る / 進む、IMEのオン / オフ
 - **右commandレイヤー**：Mac全体。音量、明るさ、ウィンドウの配置、デスクトップの切り替え
 - **起動レイヤー（右`command` + 左`command`）**：アプリの外。アプリを開く
 
 新しい割り当てを足すときも、この分け方で入れる場所が決まる。アプリ内で効くならcontrolレイヤー、どのアプリを開いていても同じ結果になるなら右commandレイヤー。
+
+ただ、IMEの切り替えは本当はMac全体に効く。文字を打つ流れで押すので、例外としてcontrolレイヤーに置いている。
 
 この分け方は、macOSのもともとの役割分担に乗っかっている。[Macのキーボードショートカットを把握する]({% post_url 2026-08-29-mac-keyboard-shortcuts %})で調べたとき、`command` + キーは「目に見える操作」（普通のショートカット）、`control` + キーは「目に見えない補助操作」や文字列操作に使われていた。`control` + `a`で行頭、`control` + `e`で行末、`control` + `d`で1文字削除、というEmacs由来のキーが標準で効くのもその流れ。controlレイヤーに矢印やPageUpを足しても、同じ文字列操作の仲間なので収まりがいい。
 
