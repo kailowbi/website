@@ -14,15 +14,15 @@ Macのキーボードは、矢印キーもEnterもBackspaceも、ホームポジ
 
 ![commandの単押し。左commandがEnter、右commandがBackspace](/assets/images/keybindings-that-keep-hands-on-home-row/1-thumb-keys.svg)
 
-左右の`command`は、押してすぐ離すとEnterとBackspaceになる。他のキーと一緒に押せば普通の`command`。
+左右の`command`は、押してすぐ離すとEnterとBackspaceになる。
 
 ![controlレイヤー。IJKLが矢印、Pと;がPageUpとPageDown、AとEが行頭と行末、左commandがEsc](/assets/images/keybindings-that-keep-hands-on-home-row/2-control-layer.svg)
 
-`control`を押しているあいだは、ほかのキーの役割が切り替わる。この切り替わった状態を「レイヤー」と呼ぶことにする。controlレイヤーでは、右手がカーソルキーになる。
+`control`を押しているあいだは、ほかのキーの役割が切り替わる。この状態を「レイヤー」と呼ぶことにする。controlレイヤーには、アプリの中での移動と文字列操作を集めている。
 
 ![右commandレイヤー。IとKが音量、EとDが明るさ、SとFがウィンドウの左右半分、1〜4がデスクトップの切り替え](/assets/images/keybindings-that-keep-hands-on-home-row/3-right-command-layer.svg)
 
-右commandレイヤーでは、音量や明るさ、ウィンドウの配置を操作できる。
+右commandレイヤーには、音量や明るさ、ウィンドウの配置のような、Mac全体に効く操作を集めている。
 
 図はキーボードを簡略化している。考え方は次の2つだけで、ここから下はなぜこう配置したかの話。
 
@@ -51,18 +51,18 @@ Aの左にある`control`を押しながら、右手の`i` / `j` / `k` / `l`で�
 
 ## 考え方2：修飾キー1つに役割は1つ
 
-キーを足していくと、どこに何を入れたか分からなくなる。なので、レイヤーごとに「何系の操作か」を決めてしまう。
+キーを足していくと、どこに何を入れたか分からなくなる。なので、レイヤーごとに「何を入れるか」の基準を決めてしまう。基準は、その操作が効く範囲。
 
-| レイヤー | 役割 | 例 |
-|---|---|---|
-| controlレイヤー | カーソル（文字の上を動く） | 矢印、PageUp / PageDown、行頭 / 行末、戻る / 進む、IMEのオン / オフ |
-| 左`command`（レイヤーにしない） | macOS標準のショートカット | コピー、貼り付け、保存。ここは何も変えない |
-| 右commandレイヤー | 操作（Macそのものを触る） | 音量、画面の明るさ、ウィンドウを左右半分に配置 |
-| 起動レイヤー（右`command` + 左`command`） | 起動 | アプリの頭文字で起動 |
+- **左`command`（そのまま）**：アプリの機能。コピーや保存など、macOS標準のショートカット。ここは何も変えない
+- **controlレイヤー**：今いるアプリの中。矢印、PageUp / PageDown、行頭 / 行末、戻る / 進む、IMEのオン / オフ
+- **右commandレイヤー**：Mac全体。音量、明るさ、ウィンドウの配置、デスクトップの切り替え
+- **起動レイヤー（右`command` + 左`command`）**：アプリの外。アプリを開く
 
-左右の`command`で役割を分けているのがポイントで、右`command`はmacOS標準のショートカットには使わない。標準のショートカットは左`command`で押す、と決めてしまえば迷わない。組み合わせを混ぜることもしない（右`command` + `control`のような割り当ては作らない）。
+新しい割り当てを足すときも、この分け方で入れる場所が決まる。アプリの中で効くならcontrolレイヤー、どのアプリを開いていても同じ結果になるなら右commandレイヤー。
 
-`control`をカーソル担当にしたのは、macOSがもともとそういう使い方をしているから。`control` + `a`で行頭、`control` + `e`で行末、`control` + `d`で1文字削除、というEmacs由来のキーが標準で効く。そこに矢印やPageUpを足しても、同じ「文字の上の操作」の仲間なので収まりがいい。Macのショートカットの役割分担は[Macのキーボードショートカットを把握する]({% post_url 2026-08-29-mac-keyboard-shortcuts %})にまとめてある。
+この分け方は、macOSのもともとの役割分担に乗っかっている。[Macのキーボードショートカットを把握する]({% post_url 2026-08-29-mac-keyboard-shortcuts %})で調べたとき、`command` + キーは「目に見える操作」（普通のショートカット）、`control` + キーは「目に見えない補助操作」や文字列操作に使われていた。`control` + `a`で行頭、`control` + `e`で行末、`control` + `d`で1文字削除、というEmacs由来のキーが標準で効くのもその流れ。controlレイヤーに矢印やPageUpを足しても、同じ文字列操作の仲間なので収まりがいい。
+
+左右の`command`で役割を分けているのもポイントで、右`command`はmacOS標準のショートカットには使わない。標準のショートカットは左`command`で押す、と決めてしまえば迷わない。レイヤー同士を混ぜることもしない（右`command` + `control`のような割り当ては作らない）。
 
 ### 位置で覚える
 

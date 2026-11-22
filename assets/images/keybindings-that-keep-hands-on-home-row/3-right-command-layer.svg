@@ -1,155 +1,156 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 782 396" width="782" height="396" font-family="'Hiragino Sans','Hiragino Kaku Gothic ProN','Noto Sans JP','Noto Sans CJK JP',sans-serif">
-<rect width="782" height="396" rx="14" fill="#f6f6f4"/>
-<text x="16" y="30" font-size="17" font-weight="700" fill="#222">③ 右commandレイヤー：操作</text>
-<rect x="16" y="56" width="46.0" height="54" rx="7" fill="#fde2e2" stroke="#b23a3a" stroke-width="1.6"/>
-<text x="21" y="68" font-size="9" fill="#9a9a96">1</text>
-<text x="39.0" y="87.5" font-size="12" font-weight="700" fill="#b23a3a" text-anchor="middle">デスク</text>
-<text x="39.0" y="101.5" font-size="12" font-weight="700" fill="#b23a3a" text-anchor="middle">1</text>
-<rect x="67" y="56" width="46.0" height="54" rx="7" fill="#fde2e2" stroke="#b23a3a" stroke-width="1.6"/>
-<text x="72" y="68" font-size="9" fill="#9a9a96">2</text>
-<text x="90.0" y="87.5" font-size="12" font-weight="700" fill="#b23a3a" text-anchor="middle">デスク</text>
-<text x="90.0" y="101.5" font-size="12" font-weight="700" fill="#b23a3a" text-anchor="middle">2</text>
-<rect x="118" y="56" width="46.0" height="54" rx="7" fill="#fde2e2" stroke="#b23a3a" stroke-width="1.6"/>
-<text x="123" y="68" font-size="9" fill="#9a9a96">3</text>
-<text x="141.0" y="87.5" font-size="12" font-weight="700" fill="#b23a3a" text-anchor="middle">デスク</text>
-<text x="141.0" y="101.5" font-size="12" font-weight="700" fill="#b23a3a" text-anchor="middle">3</text>
-<rect x="169" y="56" width="46.0" height="54" rx="7" fill="#fde2e2" stroke="#b23a3a" stroke-width="1.6"/>
-<text x="174" y="68" font-size="9" fill="#9a9a96">4</text>
-<text x="192.0" y="87.5" font-size="12" font-weight="700" fill="#b23a3a" text-anchor="middle">デスク</text>
-<text x="192.0" y="101.5" font-size="12" font-weight="700" fill="#b23a3a" text-anchor="middle">4</text>
-<rect x="220" y="56" width="46.0" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
-<text x="225" y="68" font-size="9" fill="#9a9a96">5</text>
-<rect x="271" y="56" width="46.0" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
-<text x="276" y="68" font-size="9" fill="#9a9a96">6</text>
-<rect x="322" y="56" width="46.0" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
-<text x="327" y="68" font-size="9" fill="#9a9a96">7</text>
-<rect x="373" y="56" width="46.0" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
-<text x="378" y="68" font-size="9" fill="#9a9a96">8</text>
-<rect x="424" y="56" width="46.0" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
-<text x="429" y="68" font-size="9" fill="#9a9a96">9</text>
-<rect x="475" y="56" width="46.0" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
-<text x="480" y="68" font-size="9" fill="#9a9a96">0</text>
-<rect x="526" y="56" width="46.0" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
-<text x="531" y="68" font-size="9" fill="#9a9a96">-</text>
-<rect x="577" y="56" width="46.0" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
-<text x="582" y="68" font-size="9" fill="#9a9a96">^</text>
-<rect x="628" y="56" width="46.0" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
-<text x="633" y="68" font-size="9" fill="#9a9a96">¥</text>
-<rect x="679" y="56" width="87.7" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
-<text x="684" y="68" font-size="9" fill="#9a9a96">delete</text>
-<rect x="16" y="115" width="69.0" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
-<text x="21" y="127" font-size="9" fill="#9a9a96">tab</text>
-<rect x="90.0" y="115" width="46.0" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
-<text x="95.0" y="127" font-size="9" fill="#9a9a96">Q</text>
-<rect x="141.0" y="115" width="46.0" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
-<text x="146.0" y="127" font-size="9" fill="#9a9a96">W</text>
-<rect x="192.0" y="115" width="46.0" height="54" rx="7" fill="#fde2e2" stroke="#b23a3a" stroke-width="1.6"/>
-<text x="197.0" y="127" font-size="9" fill="#9a9a96">E</text>
-<text x="215.0" y="146.5" font-size="12" font-weight="700" fill="#b23a3a" text-anchor="middle">明るさ</text>
-<text x="215.0" y="160.5" font-size="12" font-weight="700" fill="#b23a3a" text-anchor="middle">+</text>
-<rect x="243.0" y="115" width="46.0" height="54" rx="7" fill="#fde2e2" stroke="#b23a3a" stroke-width="1.6"/>
-<text x="248.0" y="127" font-size="9" fill="#9a9a96">R</text>
-<text x="266.0" y="146.5" font-size="12" font-weight="700" fill="#b23a3a" text-anchor="middle">元に</text>
-<text x="266.0" y="160.5" font-size="12" font-weight="700" fill="#b23a3a" text-anchor="middle">戻す</text>
-<rect x="294.0" y="115" width="46.0" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
-<text x="299.0" y="127" font-size="9" fill="#9a9a96">T</text>
-<rect x="345.0" y="115" width="46.0" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
-<text x="350.0" y="127" font-size="9" fill="#9a9a96">Y</text>
-<rect x="396.0" y="115" width="46.0" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
-<text x="401.0" y="127" font-size="9" fill="#9a9a96">U</text>
-<rect x="447.0" y="115" width="46.0" height="54" rx="7" fill="#fde2e2" stroke="#b23a3a" stroke-width="1.6"/>
-<text x="452.0" y="127" font-size="9" fill="#9a9a96">I</text>
-<text x="470.0" y="153.0" font-size="12" font-weight="700" fill="#b23a3a" text-anchor="middle">音量+</text>
-<rect x="498.0" y="115" width="46.0" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
-<text x="503.0" y="127" font-size="9" fill="#9a9a96">O</text>
-<rect x="549.0" y="115" width="46.0" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
-<text x="554.0" y="127" font-size="9" fill="#9a9a96">P</text>
-<rect x="600.0" y="115" width="46.0" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
-<text x="605.0" y="127" font-size="9" fill="#9a9a96">@</text>
-<rect x="651.0" y="115" width="46.0" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
-<text x="656.0" y="127" font-size="9" fill="#9a9a96">[</text>
-<rect x="702.0" y="115" width="64.7" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
-<text x="707.0" y="127" font-size="9" fill="#9a9a96">return</text>
-<rect x="16" y="174" width="80.5" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
-<text x="21" y="186" font-size="9" fill="#9a9a96">control</text>
-<rect x="101.5" y="174" width="46.0" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
-<text x="106.5" y="186" font-size="9" fill="#9a9a96">A</text>
-<rect x="152.5" y="174" width="46.0" height="54" rx="7" fill="#fde2e2" stroke="#b23a3a" stroke-width="1.6"/>
-<text x="157.5" y="186" font-size="9" fill="#9a9a96">S</text>
-<text x="175.5" y="212.0" font-size="12" font-weight="700" fill="#b23a3a" text-anchor="middle">左半分</text>
-<rect x="203.5" y="174" width="46.0" height="54" rx="7" fill="#fde2e2" stroke="#b23a3a" stroke-width="1.6"/>
-<text x="208.5" y="186" font-size="9" fill="#9a9a96">D</text>
-<text x="226.5" y="205.5" font-size="12" font-weight="700" fill="#b23a3a" text-anchor="middle">明るさ</text>
-<text x="226.5" y="219.5" font-size="12" font-weight="700" fill="#b23a3a" text-anchor="middle">−</text>
-<rect x="254.5" y="174" width="46.0" height="54" rx="7" fill="#fde2e2" stroke="#b23a3a" stroke-width="1.6"/>
-<text x="259.5" y="186" font-size="9" fill="#9a9a96">F</text>
-<text x="277.5" y="212.0" font-size="12" font-weight="700" fill="#b23a3a" text-anchor="middle">右半分</text>
-<rect x="305.5" y="174" width="46.0" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
-<text x="310.5" y="186" font-size="9" fill="#9a9a96">G</text>
-<rect x="356.5" y="174" width="46.0" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
-<text x="361.5" y="186" font-size="9" fill="#9a9a96">H</text>
-<rect x="407.5" y="174" width="46.0" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
-<text x="412.5" y="186" font-size="9" fill="#9a9a96">J</text>
-<rect x="458.5" y="174" width="46.0" height="54" rx="7" fill="#fde2e2" stroke="#b23a3a" stroke-width="1.6"/>
-<text x="463.5" y="186" font-size="9" fill="#9a9a96">K</text>
-<text x="481.5" y="212.0" font-size="12" font-weight="700" fill="#b23a3a" text-anchor="middle">音量−</text>
-<rect x="509.5" y="174" width="46.0" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
-<text x="514.5" y="186" font-size="9" fill="#9a9a96">L</text>
-<rect x="560.5" y="174" width="46.0" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
-<text x="565.5" y="186" font-size="9" fill="#9a9a96">;</text>
-<rect x="611.5" y="174" width="46.0" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
-<text x="616.5" y="186" font-size="9" fill="#9a9a96">:</text>
-<rect x="662.5" y="174" width="46.0" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
-<text x="667.5" y="186" font-size="9" fill="#9a9a96">]</text>
-<rect x="713.5" y="174" width="53.2" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
-<rect x="16" y="233" width="103.5" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
-<text x="21" y="245" font-size="9" fill="#9a9a96">shift</text>
-<rect x="124.5" y="233" width="46.0" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
-<text x="129.5" y="245" font-size="9" fill="#9a9a96">Z</text>
-<rect x="175.5" y="233" width="46.0" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
-<text x="180.5" y="245" font-size="9" fill="#9a9a96">X</text>
-<rect x="226.5" y="233" width="46.0" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
-<text x="231.5" y="245" font-size="9" fill="#9a9a96">C</text>
-<rect x="277.5" y="233" width="46.0" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
-<text x="282.5" y="245" font-size="9" fill="#9a9a96">V</text>
-<rect x="328.5" y="233" width="46.0" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
-<text x="333.5" y="245" font-size="9" fill="#9a9a96">B</text>
-<rect x="379.5" y="233" width="46.0" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
-<text x="384.5" y="245" font-size="9" fill="#9a9a96">N</text>
-<rect x="430.5" y="233" width="46.0" height="54" rx="7" fill="#fde2e2" stroke="#b23a3a" stroke-width="1.6"/>
-<text x="435.5" y="245" font-size="9" fill="#9a9a96">M</text>
-<text x="453.5" y="264.5" font-size="12" font-weight="700" fill="#b23a3a" text-anchor="middle">デスク</text>
-<text x="453.5" y="278.5" font-size="12" font-weight="700" fill="#b23a3a" text-anchor="middle">一覧</text>
-<rect x="481.5" y="233" width="46.0" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
-<text x="486.5" y="245" font-size="9" fill="#9a9a96">,</text>
-<rect x="532.5" y="233" width="46.0" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
-<text x="537.5" y="245" font-size="9" fill="#9a9a96">.</text>
-<rect x="583.5" y="233" width="46.0" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
-<text x="588.5" y="245" font-size="9" fill="#9a9a96">/</text>
-<rect x="634.5" y="233" width="46.0" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
-<text x="639.5" y="245" font-size="9" fill="#9a9a96">_</text>
-<rect x="685.5" y="233" width="81.2" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
-<text x="690.5" y="245" font-size="9" fill="#9a9a96">shift</text>
-<rect x="16" y="292" width="57.5" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
-<text x="21" y="304" font-size="9" fill="#9a9a96">caps</text>
-<rect x="78.5" y="292" width="57.5" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
-<text x="83.5" y="304" font-size="9" fill="#9a9a96">option</text>
-<rect x="141.0" y="292" width="73.6" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
-<text x="146.0" y="304" font-size="9" fill="#9a9a96">command</text>
-<rect x="219.60000000000002" y="292" width="57.5" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
-<text x="224.60000000000002" y="304" font-size="9" fill="#9a9a96">英数</text>
-<rect x="282.1" y="292" width="195.5" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
-<rect x="482.6" y="292" width="57.5" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
-<text x="487.6" y="304" font-size="9" fill="#9a9a96">かな</text>
-<rect x="545.1" y="292" width="73.6" height="54" rx="7" fill="#3b3b3b" stroke="#3b3b3b" stroke-width="1.6"/>
-<text x="550.1" y="304" font-size="9" fill="#ddd">command</text>
-<text x="581.9" y="330.0" font-size="12" font-weight="700" fill="#ffffff" text-anchor="middle">押しながら</text>
-<rect x="623.7" y="292" width="57.5" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
-<text x="628.7" y="304" font-size="9" fill="#9a9a96">fn</text>
-<rect x="686.2" y="292" width="80.5" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
-<text x="691.2" y="304" font-size="9" fill="#9a9a96">← ↑ ↓ →</text>
-<rect x="16" y="361" width="16" height="16" rx="4" fill="#3b3b3b" stroke="#3b3b3b"/>
-<text x="38" y="374" font-size="12" fill="#444">レイヤーキー（押しながら使う）</text>
-<rect x="230" y="361" width="16" height="16" rx="4" fill="#fde2e2" stroke="#b23a3a"/>
-<text x="252" y="374" font-size="12" fill="#444">Macそのものの操作</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 782 414" width="782" height="414" font-family="'Hiragino Sans','Hiragino Kaku Gothic ProN','Noto Sans JP','Noto Sans CJK JP',sans-serif">
+<rect width="782" height="414" rx="14" fill="#f6f6f4"/>
+<text x="16" y="30" font-size="17" font-weight="700" fill="#222">③ 右commandレイヤー：Mac全体の操作</text>
+<text x="42" y="52" font-size="12.5" fill="#555">音量・明るさ・ウィンドウの配置・デスクトップの切り替え</text>
+<rect x="16" y="74" width="46.0" height="54" rx="7" fill="#fde2e2" stroke="#b23a3a" stroke-width="1.6"/>
+<text x="21" y="86" font-size="9" fill="#9a9a96">1</text>
+<text x="39.0" y="105.5" font-size="12" font-weight="700" fill="#b23a3a" text-anchor="middle">デスク</text>
+<text x="39.0" y="119.5" font-size="12" font-weight="700" fill="#b23a3a" text-anchor="middle">1</text>
+<rect x="67" y="74" width="46.0" height="54" rx="7" fill="#fde2e2" stroke="#b23a3a" stroke-width="1.6"/>
+<text x="72" y="86" font-size="9" fill="#9a9a96">2</text>
+<text x="90.0" y="105.5" font-size="12" font-weight="700" fill="#b23a3a" text-anchor="middle">デスク</text>
+<text x="90.0" y="119.5" font-size="12" font-weight="700" fill="#b23a3a" text-anchor="middle">2</text>
+<rect x="118" y="74" width="46.0" height="54" rx="7" fill="#fde2e2" stroke="#b23a3a" stroke-width="1.6"/>
+<text x="123" y="86" font-size="9" fill="#9a9a96">3</text>
+<text x="141.0" y="105.5" font-size="12" font-weight="700" fill="#b23a3a" text-anchor="middle">デスク</text>
+<text x="141.0" y="119.5" font-size="12" font-weight="700" fill="#b23a3a" text-anchor="middle">3</text>
+<rect x="169" y="74" width="46.0" height="54" rx="7" fill="#fde2e2" stroke="#b23a3a" stroke-width="1.6"/>
+<text x="174" y="86" font-size="9" fill="#9a9a96">4</text>
+<text x="192.0" y="105.5" font-size="12" font-weight="700" fill="#b23a3a" text-anchor="middle">デスク</text>
+<text x="192.0" y="119.5" font-size="12" font-weight="700" fill="#b23a3a" text-anchor="middle">4</text>
+<rect x="220" y="74" width="46.0" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
+<text x="225" y="86" font-size="9" fill="#9a9a96">5</text>
+<rect x="271" y="74" width="46.0" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
+<text x="276" y="86" font-size="9" fill="#9a9a96">6</text>
+<rect x="322" y="74" width="46.0" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
+<text x="327" y="86" font-size="9" fill="#9a9a96">7</text>
+<rect x="373" y="74" width="46.0" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
+<text x="378" y="86" font-size="9" fill="#9a9a96">8</text>
+<rect x="424" y="74" width="46.0" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
+<text x="429" y="86" font-size="9" fill="#9a9a96">9</text>
+<rect x="475" y="74" width="46.0" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
+<text x="480" y="86" font-size="9" fill="#9a9a96">0</text>
+<rect x="526" y="74" width="46.0" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
+<text x="531" y="86" font-size="9" fill="#9a9a96">-</text>
+<rect x="577" y="74" width="46.0" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
+<text x="582" y="86" font-size="9" fill="#9a9a96">^</text>
+<rect x="628" y="74" width="46.0" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
+<text x="633" y="86" font-size="9" fill="#9a9a96">¥</text>
+<rect x="679" y="74" width="87.7" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
+<text x="684" y="86" font-size="9" fill="#9a9a96">delete</text>
+<rect x="16" y="133" width="69.0" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
+<text x="21" y="145" font-size="9" fill="#9a9a96">tab</text>
+<rect x="90.0" y="133" width="46.0" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
+<text x="95.0" y="145" font-size="9" fill="#9a9a96">Q</text>
+<rect x="141.0" y="133" width="46.0" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
+<text x="146.0" y="145" font-size="9" fill="#9a9a96">W</text>
+<rect x="192.0" y="133" width="46.0" height="54" rx="7" fill="#fde2e2" stroke="#b23a3a" stroke-width="1.6"/>
+<text x="197.0" y="145" font-size="9" fill="#9a9a96">E</text>
+<text x="215.0" y="164.5" font-size="12" font-weight="700" fill="#b23a3a" text-anchor="middle">明るさ</text>
+<text x="215.0" y="178.5" font-size="12" font-weight="700" fill="#b23a3a" text-anchor="middle">+</text>
+<rect x="243.0" y="133" width="46.0" height="54" rx="7" fill="#fde2e2" stroke="#b23a3a" stroke-width="1.6"/>
+<text x="248.0" y="145" font-size="9" fill="#9a9a96">R</text>
+<text x="266.0" y="164.5" font-size="12" font-weight="700" fill="#b23a3a" text-anchor="middle">元に</text>
+<text x="266.0" y="178.5" font-size="12" font-weight="700" fill="#b23a3a" text-anchor="middle">戻す</text>
+<rect x="294.0" y="133" width="46.0" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
+<text x="299.0" y="145" font-size="9" fill="#9a9a96">T</text>
+<rect x="345.0" y="133" width="46.0" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
+<text x="350.0" y="145" font-size="9" fill="#9a9a96">Y</text>
+<rect x="396.0" y="133" width="46.0" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
+<text x="401.0" y="145" font-size="9" fill="#9a9a96">U</text>
+<rect x="447.0" y="133" width="46.0" height="54" rx="7" fill="#fde2e2" stroke="#b23a3a" stroke-width="1.6"/>
+<text x="452.0" y="145" font-size="9" fill="#9a9a96">I</text>
+<text x="470.0" y="171.0" font-size="12" font-weight="700" fill="#b23a3a" text-anchor="middle">音量+</text>
+<rect x="498.0" y="133" width="46.0" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
+<text x="503.0" y="145" font-size="9" fill="#9a9a96">O</text>
+<rect x="549.0" y="133" width="46.0" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
+<text x="554.0" y="145" font-size="9" fill="#9a9a96">P</text>
+<rect x="600.0" y="133" width="46.0" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
+<text x="605.0" y="145" font-size="9" fill="#9a9a96">@</text>
+<rect x="651.0" y="133" width="46.0" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
+<text x="656.0" y="145" font-size="9" fill="#9a9a96">[</text>
+<rect x="702.0" y="133" width="64.7" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
+<text x="707.0" y="145" font-size="9" fill="#9a9a96">return</text>
+<rect x="16" y="192" width="80.5" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
+<text x="21" y="204" font-size="9" fill="#9a9a96">control</text>
+<rect x="101.5" y="192" width="46.0" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
+<text x="106.5" y="204" font-size="9" fill="#9a9a96">A</text>
+<rect x="152.5" y="192" width="46.0" height="54" rx="7" fill="#fde2e2" stroke="#b23a3a" stroke-width="1.6"/>
+<text x="157.5" y="204" font-size="9" fill="#9a9a96">S</text>
+<text x="175.5" y="230.0" font-size="12" font-weight="700" fill="#b23a3a" text-anchor="middle">左半分</text>
+<rect x="203.5" y="192" width="46.0" height="54" rx="7" fill="#fde2e2" stroke="#b23a3a" stroke-width="1.6"/>
+<text x="208.5" y="204" font-size="9" fill="#9a9a96">D</text>
+<text x="226.5" y="223.5" font-size="12" font-weight="700" fill="#b23a3a" text-anchor="middle">明るさ</text>
+<text x="226.5" y="237.5" font-size="12" font-weight="700" fill="#b23a3a" text-anchor="middle">−</text>
+<rect x="254.5" y="192" width="46.0" height="54" rx="7" fill="#fde2e2" stroke="#b23a3a" stroke-width="1.6"/>
+<text x="259.5" y="204" font-size="9" fill="#9a9a96">F</text>
+<text x="277.5" y="230.0" font-size="12" font-weight="700" fill="#b23a3a" text-anchor="middle">右半分</text>
+<rect x="305.5" y="192" width="46.0" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
+<text x="310.5" y="204" font-size="9" fill="#9a9a96">G</text>
+<rect x="356.5" y="192" width="46.0" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
+<text x="361.5" y="204" font-size="9" fill="#9a9a96">H</text>
+<rect x="407.5" y="192" width="46.0" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
+<text x="412.5" y="204" font-size="9" fill="#9a9a96">J</text>
+<rect x="458.5" y="192" width="46.0" height="54" rx="7" fill="#fde2e2" stroke="#b23a3a" stroke-width="1.6"/>
+<text x="463.5" y="204" font-size="9" fill="#9a9a96">K</text>
+<text x="481.5" y="230.0" font-size="12" font-weight="700" fill="#b23a3a" text-anchor="middle">音量−</text>
+<rect x="509.5" y="192" width="46.0" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
+<text x="514.5" y="204" font-size="9" fill="#9a9a96">L</text>
+<rect x="560.5" y="192" width="46.0" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
+<text x="565.5" y="204" font-size="9" fill="#9a9a96">;</text>
+<rect x="611.5" y="192" width="46.0" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
+<text x="616.5" y="204" font-size="9" fill="#9a9a96">:</text>
+<rect x="662.5" y="192" width="46.0" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
+<text x="667.5" y="204" font-size="9" fill="#9a9a96">]</text>
+<rect x="713.5" y="192" width="53.2" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
+<rect x="16" y="251" width="103.5" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
+<text x="21" y="263" font-size="9" fill="#9a9a96">shift</text>
+<rect x="124.5" y="251" width="46.0" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
+<text x="129.5" y="263" font-size="9" fill="#9a9a96">Z</text>
+<rect x="175.5" y="251" width="46.0" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
+<text x="180.5" y="263" font-size="9" fill="#9a9a96">X</text>
+<rect x="226.5" y="251" width="46.0" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
+<text x="231.5" y="263" font-size="9" fill="#9a9a96">C</text>
+<rect x="277.5" y="251" width="46.0" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
+<text x="282.5" y="263" font-size="9" fill="#9a9a96">V</text>
+<rect x="328.5" y="251" width="46.0" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
+<text x="333.5" y="263" font-size="9" fill="#9a9a96">B</text>
+<rect x="379.5" y="251" width="46.0" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
+<text x="384.5" y="263" font-size="9" fill="#9a9a96">N</text>
+<rect x="430.5" y="251" width="46.0" height="54" rx="7" fill="#fde2e2" stroke="#b23a3a" stroke-width="1.6"/>
+<text x="435.5" y="263" font-size="9" fill="#9a9a96">M</text>
+<text x="453.5" y="282.5" font-size="12" font-weight="700" fill="#b23a3a" text-anchor="middle">デスク</text>
+<text x="453.5" y="296.5" font-size="12" font-weight="700" fill="#b23a3a" text-anchor="middle">一覧</text>
+<rect x="481.5" y="251" width="46.0" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
+<text x="486.5" y="263" font-size="9" fill="#9a9a96">,</text>
+<rect x="532.5" y="251" width="46.0" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
+<text x="537.5" y="263" font-size="9" fill="#9a9a96">.</text>
+<rect x="583.5" y="251" width="46.0" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
+<text x="588.5" y="263" font-size="9" fill="#9a9a96">/</text>
+<rect x="634.5" y="251" width="46.0" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
+<text x="639.5" y="263" font-size="9" fill="#9a9a96">_</text>
+<rect x="685.5" y="251" width="81.2" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
+<text x="690.5" y="263" font-size="9" fill="#9a9a96">shift</text>
+<rect x="16" y="310" width="57.5" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
+<text x="21" y="322" font-size="9" fill="#9a9a96">caps</text>
+<rect x="78.5" y="310" width="57.5" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
+<text x="83.5" y="322" font-size="9" fill="#9a9a96">option</text>
+<rect x="141.0" y="310" width="73.6" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
+<text x="146.0" y="322" font-size="9" fill="#9a9a96">command</text>
+<rect x="219.60000000000002" y="310" width="57.5" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
+<text x="224.60000000000002" y="322" font-size="9" fill="#9a9a96">英数</text>
+<rect x="282.1" y="310" width="195.5" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
+<rect x="482.6" y="310" width="57.5" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
+<text x="487.6" y="322" font-size="9" fill="#9a9a96">かな</text>
+<rect x="545.1" y="310" width="73.6" height="54" rx="7" fill="#3b3b3b" stroke="#3b3b3b" stroke-width="1.6"/>
+<text x="550.1" y="322" font-size="9" fill="#ddd">command</text>
+<text x="581.9" y="348.0" font-size="12" font-weight="700" fill="#ffffff" text-anchor="middle">押しながら</text>
+<rect x="623.7" y="310" width="57.5" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
+<text x="628.7" y="322" font-size="9" fill="#9a9a96">fn</text>
+<rect x="686.2" y="310" width="80.5" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
+<text x="691.2" y="322" font-size="9" fill="#9a9a96">← ↑ ↓ →</text>
+<rect x="16" y="379" width="16" height="16" rx="4" fill="#3b3b3b" stroke="#3b3b3b"/>
+<text x="38" y="392" font-size="12" fill="#444">レイヤーキー（押しながら使う）</text>
+<rect x="230" y="379" width="16" height="16" rx="4" fill="#fde2e2" stroke="#b23a3a"/>
+<text x="252" y="392" font-size="12" fill="#444">Mac全体に効く</text>
 </svg>
