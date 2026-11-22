@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 782 414" width="782" height="414" font-family="'Hiragino Sans','Hiragino Kaku Gothic ProN','Noto Sans JP','Noto Sans CJK JP',sans-serif">
 <rect width="782" height="414" rx="14" fill="#f6f6f4"/>
-<text x="16" y="30" font-size="17" font-weight="700" fill="#222">② controlレイヤー：アプリの中の移動と文字列操作</text>
+<text x="16" y="30" font-size="17" font-weight="700" fill="#222">② controlレイヤー：アプリ内での操作</text>
 <text x="42" y="52" font-size="12.5" fill="#555">矢印・PageUp/Down・行頭/行末・戻る/進む・IMEのオン/オフ</text>
 <rect x="16" y="74" width="46.0" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
 <text x="21" y="86" font-size="9" fill="#9a9a96">1</text>
@@ -148,5 +148,5 @@
 <rect x="16" y="379" width="16" height="16" rx="4" fill="#3b3b3b" stroke="#3b3b3b"/>
 <text x="38" y="392" font-size="12" fill="#444">レイヤーキー（押しながら使う）</text>
 <rect x="230" y="379" width="16" height="16" rx="4" fill="#dcefe1" stroke="#1f7a3e"/>
-<text x="252" y="392" font-size="12" fill="#444">今いるアプリの中で効く</text>
+<text x="252" y="392" font-size="12" fill="#444">アプリ内で効く</text>
 </svg>
