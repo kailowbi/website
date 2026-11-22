@@ -1,0 +1,143 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 794 396" width="794" height="396" font-family="'Hiragino Sans','Hiragino Kaku Gothic ProN','Noto Sans JP','Noto Sans CJK JP',sans-serif">
+<rect width="794" height="396" rx="14" fill="#f6f6f4"/>
+<text x="16" y="30" font-size="17" font-weight="700" fill="#222">① 親指キー（何も押していないとき）</text>
+<rect x="16" y="56" width="46.0" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
+<text x="21" y="68" font-size="9" fill="#9a9a96">1</text>
+<rect x="67" y="56" width="46.0" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
+<text x="72" y="68" font-size="9" fill="#9a9a96">2</text>
+<rect x="118" y="56" width="46.0" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
+<text x="123" y="68" font-size="9" fill="#9a9a96">3</text>
+<rect x="169" y="56" width="46.0" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
+<text x="174" y="68" font-size="9" fill="#9a9a96">4</text>
+<rect x="220" y="56" width="46.0" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
+<text x="225" y="68" font-size="9" fill="#9a9a96">5</text>
+<rect x="271" y="56" width="46.0" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
+<text x="276" y="68" font-size="9" fill="#9a9a96">6</text>
+<rect x="322" y="56" width="46.0" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
+<text x="327" y="68" font-size="9" fill="#9a9a96">7</text>
+<rect x="373" y="56" width="46.0" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
+<text x="378" y="68" font-size="9" fill="#9a9a96">8</text>
+<rect x="424" y="56" width="46.0" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
+<text x="429" y="68" font-size="9" fill="#9a9a96">9</text>
+<rect x="475" y="56" width="46.0" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
+<text x="480" y="68" font-size="9" fill="#9a9a96">0</text>
+<rect x="526" y="56" width="46.0" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
+<text x="531" y="68" font-size="9" fill="#9a9a96">-</text>
+<rect x="577" y="56" width="46.0" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
+<text x="582" y="68" font-size="9" fill="#9a9a96">^</text>
+<rect x="628" y="56" width="46.0" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
+<text x="633" y="68" font-size="9" fill="#9a9a96">¥</text>
+<rect x="679" y="56" width="99.2" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
+<text x="684" y="68" font-size="9" fill="#9a9a96">delete</text>
+<rect x="16" y="115" width="69.0" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
+<text x="21" y="127" font-size="9" fill="#9a9a96">tab</text>
+<rect x="90.0" y="115" width="46.0" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
+<text x="95.0" y="127" font-size="9" fill="#9a9a96">Q</text>
+<rect x="141.0" y="115" width="46.0" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
+<text x="146.0" y="127" font-size="9" fill="#9a9a96">W</text>
+<rect x="192.0" y="115" width="46.0" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
+<text x="197.0" y="127" font-size="9" fill="#9a9a96">E</text>
+<rect x="243.0" y="115" width="46.0" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
+<text x="248.0" y="127" font-size="9" fill="#9a9a96">R</text>
+<rect x="294.0" y="115" width="46.0" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
+<text x="299.0" y="127" font-size="9" fill="#9a9a96">T</text>
+<rect x="345.0" y="115" width="46.0" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
+<text x="350.0" y="127" font-size="9" fill="#9a9a96">Y</text>
+<rect x="396.0" y="115" width="46.0" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
+<text x="401.0" y="127" font-size="9" fill="#9a9a96">U</text>
+<rect x="447.0" y="115" width="46.0" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
+<text x="452.0" y="127" font-size="9" fill="#9a9a96">I</text>
+<rect x="498.0" y="115" width="46.0" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
+<text x="503.0" y="127" font-size="9" fill="#9a9a96">O</text>
+<rect x="549.0" y="115" width="46.0" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
+<text x="554.0" y="127" font-size="9" fill="#9a9a96">P</text>
+<rect x="600.0" y="115" width="46.0" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
+<text x="605.0" y="127" font-size="9" fill="#9a9a96">@</text>
+<rect x="651.0" y="115" width="46.0" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
+<text x="656.0" y="127" font-size="9" fill="#9a9a96">[</text>
+<rect x="702.0" y="115" width="76.2" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
+<text x="707.0" y="127" font-size="9" fill="#9a9a96">return</text>
+<rect x="16" y="174" width="80.5" height="54" rx="7" fill="#3b3b3b" stroke="#3b3b3b" stroke-width="1.6"/>
+<text x="21" y="186" font-size="9" fill="#ddd">control</text>
+<text x="56.2" y="212.0" font-size="12" font-weight="700" fill="#ffffff" text-anchor="middle">カーソル②</text>
+<rect x="101.5" y="174" width="46.0" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
+<text x="106.5" y="186" font-size="9" fill="#9a9a96">A</text>
+<rect x="152.5" y="174" width="46.0" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
+<text x="157.5" y="186" font-size="9" fill="#9a9a96">S</text>
+<rect x="203.5" y="174" width="46.0" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
+<text x="208.5" y="186" font-size="9" fill="#9a9a96">D</text>
+<rect x="254.5" y="174" width="46.0" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
+<text x="259.5" y="186" font-size="9" fill="#9a9a96">F</text>
+<rect x="305.5" y="174" width="46.0" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
+<text x="310.5" y="186" font-size="9" fill="#9a9a96">G</text>
+<rect x="356.5" y="174" width="46.0" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
+<text x="361.5" y="186" font-size="9" fill="#9a9a96">H</text>
+<rect x="407.5" y="174" width="46.0" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
+<text x="412.5" y="186" font-size="9" fill="#9a9a96">J</text>
+<rect x="458.5" y="174" width="46.0" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
+<text x="463.5" y="186" font-size="9" fill="#9a9a96">K</text>
+<rect x="509.5" y="174" width="46.0" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
+<text x="514.5" y="186" font-size="9" fill="#9a9a96">L</text>
+<rect x="560.5" y="174" width="46.0" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
+<text x="565.5" y="186" font-size="9" fill="#9a9a96">;</text>
+<rect x="611.5" y="174" width="46.0" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
+<text x="616.5" y="186" font-size="9" fill="#9a9a96">:</text>
+<rect x="662.5" y="174" width="46.0" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
+<text x="667.5" y="186" font-size="9" fill="#9a9a96">]</text>
+<rect x="713.5" y="174" width="64.7" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
+<rect x="16" y="233" width="103.5" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
+<text x="21" y="245" font-size="9" fill="#9a9a96">shift</text>
+<rect x="124.5" y="233" width="46.0" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
+<text x="129.5" y="245" font-size="9" fill="#9a9a96">Z</text>
+<rect x="175.5" y="233" width="46.0" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
+<text x="180.5" y="245" font-size="9" fill="#9a9a96">X</text>
+<rect x="226.5" y="233" width="46.0" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
+<text x="231.5" y="245" font-size="9" fill="#9a9a96">C</text>
+<rect x="277.5" y="233" width="46.0" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
+<text x="282.5" y="245" font-size="9" fill="#9a9a96">V</text>
+<rect x="328.5" y="233" width="46.0" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
+<text x="333.5" y="245" font-size="9" fill="#9a9a96">B</text>
+<rect x="379.5" y="233" width="46.0" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
+<text x="384.5" y="245" font-size="9" fill="#9a9a96">N</text>
+<rect x="430.5" y="233" width="46.0" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
+<text x="435.5" y="245" font-size="9" fill="#9a9a96">M</text>
+<rect x="481.5" y="233" width="46.0" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
+<text x="486.5" y="245" font-size="9" fill="#9a9a96">,</text>
+<rect x="532.5" y="233" width="46.0" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
+<text x="537.5" y="245" font-size="9" fill="#9a9a96">.</text>
+<rect x="583.5" y="233" width="46.0" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
+<text x="588.5" y="245" font-size="9" fill="#9a9a96">/</text>
+<rect x="634.5" y="233" width="46.0" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
+<text x="639.5" y="245" font-size="9" fill="#9a9a96">_</text>
+<rect x="685.5" y="233" width="92.7" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
+<text x="690.5" y="245" font-size="9" fill="#9a9a96">shift</text>
+<rect x="16" y="292" width="57.5" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
+<text x="21" y="304" font-size="9" fill="#9a9a96">caps</text>
+<rect x="78.5" y="292" width="57.5" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
+<text x="83.5" y="304" font-size="9" fill="#9a9a96">option</text>
+<rect x="141.0" y="292" width="69.0" height="54" rx="7" fill="#e3ecfb" stroke="#2f5fb3" stroke-width="1.6"/>
+<text x="146.0" y="304" font-size="9" fill="#9a9a96">command</text>
+<text x="175.5" y="330.0" font-size="12" font-weight="700" fill="#2f5fb3" text-anchor="middle">英数</text>
+<rect x="215.0" y="292" width="73.6" height="54" rx="7" fill="#fde7c8" stroke="#c26a00" stroke-width="1.6"/>
+<text x="220.0" y="304" font-size="9" fill="#9a9a96">英数</text>
+<text x="251.8" y="323.5" font-size="12" font-weight="700" fill="#c26a00" text-anchor="middle">cmd</text>
+<text x="251.8" y="337.5" font-size="12" font-weight="700" fill="#c26a00" text-anchor="middle">単押しEnter</text>
+<rect x="293.6" y="292" width="184.0" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
+<rect x="482.6" y="292" width="73.6" height="54" rx="7" fill="#fde7c8" stroke="#c26a00" stroke-width="1.6"/>
+<text x="487.6" y="304" font-size="9" fill="#9a9a96">かな</text>
+<text x="519.4" y="323.5" font-size="12" font-weight="700" fill="#c26a00" text-anchor="middle">cmd</text>
+<text x="519.4" y="337.5" font-size="12" font-weight="700" fill="#c26a00" text-anchor="middle">単押しBS</text>
+<rect x="561.2" y="292" width="69.0" height="54" rx="7" fill="#e3ecfb" stroke="#2f5fb3" stroke-width="1.6"/>
+<text x="566.2" y="304" font-size="9" fill="#9a9a96">command</text>
+<text x="595.7" y="330.0" font-size="12" font-weight="700" fill="#2f5fb3" text-anchor="middle">かな</text>
+<rect x="635.2" y="292" width="57.5" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
+<text x="640.2" y="304" font-size="9" fill="#9a9a96">fn</text>
+<rect x="697.7" y="292" width="80.5" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
+<text x="702.7" y="304" font-size="9" fill="#9a9a96">← ↑ ↓ →</text>
+<rect x="16" y="361" width="16" height="16" rx="4" fill="#fde7c8" stroke="#c26a00"/>
+<text x="38" y="374" font-size="12" fill="#444">押しっぱなしで command、単押しで別のキー</text>
+<rect x="338" y="361" width="16" height="16" rx="4" fill="#e3ecfb" stroke="#2f5fb3"/>
+<text x="360" y="374" font-size="12" fill="#444">IME の切り替え</text>
+<rect x="480" y="361" width="16" height="16" rx="4" fill="#3b3b3b" stroke="#3b3b3b"/>
+<text x="502" y="374" font-size="12" fill="#444">レイヤーの入口</text>
+</svg>
