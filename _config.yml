@@ -25,7 +25,7 @@ adsense_client: ca-pub-4993198530161495
 
 markdown: CommonMarkGhPages
 commonmark:
-  options: ["SMART", "FOOTNOTES"]
+  options: ["SMART", "FOOTNOTES", "UNSAFE"]
   extensions: ["strikethrough", "autolink", "table", "tagfilter", "tasklist"]
 
 # デフォルトの記事レイアウトなど
