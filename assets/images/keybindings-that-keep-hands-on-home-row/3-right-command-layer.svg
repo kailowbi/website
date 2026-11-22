@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 794 396" width="794" height="396" font-family="'Hiragino Sans','Hiragino Kaku Gothic ProN','Noto Sans JP','Noto Sans CJK JP',sans-serif">
-<rect width="794" height="396" rx="14" fill="#f6f6f4"/>
-<text x="16" y="30" font-size="17" font-weight="700" fill="#222">③ 右 command（かなの位置）を押しっぱなし：操作</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 782 396" width="782" height="396" font-family="'Hiragino Sans','Hiragino Kaku Gothic ProN','Noto Sans JP','Noto Sans CJK JP',sans-serif">
+<rect width="782" height="396" rx="14" fill="#f6f6f4"/>
+<text x="16" y="30" font-size="17" font-weight="700" fill="#222">③ 右commandを押しながら：操作</text>
 <rect x="16" y="56" width="46.0" height="54" rx="7" fill="#fde2e2" stroke="#b23a3a" stroke-width="1.6"/>
 <text x="21" y="68" font-size="9" fill="#9a9a96">1</text>
 <text x="39.0" y="87.5" font-size="12" font-weight="700" fill="#b23a3a" text-anchor="middle">デスク</text>
@@ -35,7 +35,7 @@
 <text x="582" y="68" font-size="9" fill="#9a9a96">^</text>
 <rect x="628" y="56" width="46.0" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
 <text x="633" y="68" font-size="9" fill="#9a9a96">¥</text>
-<rect x="679" y="56" width="99.2" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
+<rect x="679" y="56" width="87.7" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
 <text x="684" y="68" font-size="9" fill="#9a9a96">delete</text>
 <rect x="16" y="115" width="69.0" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
 <text x="21" y="127" font-size="9" fill="#9a9a96">tab</text>
@@ -68,7 +68,7 @@
 <text x="605.0" y="127" font-size="9" fill="#9a9a96">@</text>
 <rect x="651.0" y="115" width="46.0" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
 <text x="656.0" y="127" font-size="9" fill="#9a9a96">[</text>
-<rect x="702.0" y="115" width="76.2" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
+<rect x="702.0" y="115" width="64.7" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
 <text x="707.0" y="127" font-size="9" fill="#9a9a96">return</text>
 <rect x="16" y="174" width="80.5" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
 <text x="21" y="186" font-size="9" fill="#9a9a96">control</text>
@@ -101,7 +101,7 @@
 <text x="616.5" y="186" font-size="9" fill="#9a9a96">:</text>
 <rect x="662.5" y="174" width="46.0" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
 <text x="667.5" y="186" font-size="9" fill="#9a9a96">]</text>
-<rect x="713.5" y="174" width="64.7" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
+<rect x="713.5" y="174" width="53.2" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
 <rect x="16" y="233" width="103.5" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
 <text x="21" y="245" font-size="9" fill="#9a9a96">shift</text>
 <rect x="124.5" y="233" width="46.0" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
@@ -128,28 +128,28 @@
 <text x="588.5" y="245" font-size="9" fill="#9a9a96">/</text>
 <rect x="634.5" y="233" width="46.0" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
 <text x="639.5" y="245" font-size="9" fill="#9a9a96">_</text>
-<rect x="685.5" y="233" width="92.7" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
+<rect x="685.5" y="233" width="81.2" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
 <text x="690.5" y="245" font-size="9" fill="#9a9a96">shift</text>
 <rect x="16" y="292" width="57.5" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
 <text x="21" y="304" font-size="9" fill="#9a9a96">caps</text>
 <rect x="78.5" y="292" width="57.5" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
 <text x="83.5" y="304" font-size="9" fill="#9a9a96">option</text>
-<rect x="141.0" y="292" width="69.0" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
+<rect x="141.0" y="292" width="73.6" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
 <text x="146.0" y="304" font-size="9" fill="#9a9a96">command</text>
-<rect x="215.0" y="292" width="73.6" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
-<text x="220.0" y="304" font-size="9" fill="#9a9a96">英数</text>
-<rect x="293.6" y="292" width="184.0" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
-<rect x="482.6" y="292" width="73.6" height="54" rx="7" fill="#3b3b3b" stroke="#3b3b3b" stroke-width="1.6"/>
-<text x="487.6" y="304" font-size="9" fill="#ddd">かな</text>
-<text x="519.4" y="330.0" font-size="12" font-weight="700" fill="#ffffff" text-anchor="middle">押す</text>
-<rect x="561.2" y="292" width="69.0" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
-<text x="566.2" y="304" font-size="9" fill="#9a9a96">command</text>
-<rect x="635.2" y="292" width="57.5" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
-<text x="640.2" y="304" font-size="9" fill="#9a9a96">fn</text>
-<rect x="697.7" y="292" width="80.5" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
-<text x="702.7" y="304" font-size="9" fill="#9a9a96">← ↑ ↓ →</text>
+<rect x="219.60000000000002" y="292" width="57.5" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
+<text x="224.60000000000002" y="304" font-size="9" fill="#9a9a96">英数</text>
+<rect x="282.1" y="292" width="195.5" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
+<rect x="482.6" y="292" width="57.5" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
+<text x="487.6" y="304" font-size="9" fill="#9a9a96">かな</text>
+<rect x="545.1" y="292" width="73.6" height="54" rx="7" fill="#3b3b3b" stroke="#3b3b3b" stroke-width="1.6"/>
+<text x="550.1" y="304" font-size="9" fill="#ddd">command</text>
+<text x="581.9" y="330.0" font-size="12" font-weight="700" fill="#ffffff" text-anchor="middle">押しながら</text>
+<rect x="623.7" y="292" width="57.5" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
+<text x="628.7" y="304" font-size="9" fill="#9a9a96">fn</text>
+<rect x="686.2" y="292" width="80.5" height="54" rx="7" fill="#ffffff" stroke="#d4d4d0" stroke-width="1"/>
+<text x="691.2" y="304" font-size="9" fill="#9a9a96">← ↑ ↓ →</text>
 <rect x="16" y="361" width="16" height="16" rx="4" fill="#3b3b3b" stroke="#3b3b3b"/>
-<text x="38" y="374" font-size="12" fill="#444">押しっぱなしにするキー</text>
-<rect x="182" y="361" width="16" height="16" rx="4" fill="#fde2e2" stroke="#b23a3a"/>
-<text x="204" y="374" font-size="12" fill="#444">Mac そのものの操作</text>
+<text x="38" y="374" font-size="12" fill="#444">押しながら</text>
+<rect x="110" y="361" width="16" height="16" rx="4" fill="#fde2e2" stroke="#b23a3a"/>
+<text x="132" y="374" font-size="12" fill="#444">Macそのものの操作</text>
 </svg>
