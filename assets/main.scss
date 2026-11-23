@@ -15,83 +15,126 @@ $base-font-family: -apple-system, BlinkMacSystemFont,
 
 // リンク色をテーマ既定の青からサイトのアクセントカラーにそろえる
 $brand-color: {{ site.primary_color }};
+$card-bg-header: #ffffff;
 
 @import "minima";
 
-.site-header {
-  border-top: 5px solid {{ site.primary_color }};
-}
-
 // Safari 26 以降は theme-color メタタグを廃止し、body の background-color を
 // タブ/ツールバー色の参照元にするため、meta タグと合わせて指定する
-// (page-content/footer は元の白背景に戻し、見た目への影響を避ける)
+// (ヘッダー・本文エリア・フッターにはそれぞれ背景色を指定し、見た目への影響を避ける)
 body {
   background-color: {{ site.primary_color }};
 }
 
-.site-header,
-.page-content,
-.site-footer {
-  background-color: $background-color;
+.site-header {
+  background-color: $card-bg-header;
 }
 
 // ==========================================================================
-// 見出し・ヘッダー・フッター(読みやすさの調整)
+// デザインの土台: 淡いグレーの背景に白いカードを置いて、区切りと奥行きを出す
 // ==========================================================================
 
-// minima の見出しは細字で本文との差が大きさだけなので、太字にして構成をつかみやすくする
-.post-title,
-.page-heading {
-  font-weight: 700;
-  letter-spacing: 0;
-  line-height: 1.4;
-  @include relative-font-size(1.875);
+$accent: {{ site.primary_color }};
+$accent-soft: rgba(143, 58, 58, 0.08);
+$page-bg: #f4f2ef;
+$card-bg: #ffffff;
+$line: #e7e3de;
+$text-sub: #6b6560;
+$radius: 12px;
+$shadow: 0 1px 2px rgba(40, 30, 20, 0.04), 0 4px 16px rgba(40, 30, 20, 0.05);
+$shadow-hover: 0 2px 4px rgba(40, 30, 20, 0.06), 0 10px 28px rgba(40, 30, 20, 0.10);
+
+.page-content {
+  background-color: $page-bg;
+  padding: ($spacing-unit * 1.4) 0 ($spacing-unit * 2);
 
   @include media-query($on-palm) {
-    @include relative-font-size(1.5);
+    padding: $spacing-unit * 0.6 0 $spacing-unit;
   }
 }
 
-.post-header {
-  margin-bottom: $spacing-unit;
+@include media-query($on-palm) {
+  .page-content .wrapper {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
 }
 
-.post-content {
-  h1, h2, h3, h4, h5, h6 {
-    font-weight: 700;
-    line-height: 1.4;
+.card {
+  background-color: $card-bg;
+  border: 1px solid $line;
+  border-radius: $radius;
+  box-shadow: $shadow;
+}
+
+article.card {
+  padding: ($spacing-unit * 1.4) ($spacing-unit * 1.6);
+
+  @include media-query($on-palm) {
+    padding: ($spacing-unit * 0.8) ($spacing-unit * 0.6);
   }
+}
 
-  h2 {
-    @include relative-font-size(1.5);
+// --------------------------------------------------------------------------
+// ヘッダー
+// --------------------------------------------------------------------------
 
-    @include media-query($on-palm) {
-      @include relative-font-size(1.3);
-    }
-  }
-
-  h3 {
-    @include relative-font-size(1.25);
-
-    @include media-query($on-palm) {
-      @include relative-font-size(1.15);
-    }
-  }
-
-  h4 {
-    @include relative-font-size(1.1);
-  }
+.site-header {
+  border-top: 4px solid $accent;
+  border-bottom: 1px solid $line;
 }
 
 .site-title {
-  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 800;
+  letter-spacing: 0.01em;
+  color: $text-color;
+
+  &:visited {
+    color: $text-color;
+  }
+}
+
+// ロゴ代わりの小さな角丸マーク
+.site-title-mark {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border-radius: 4px;
+  background: linear-gradient(135deg, $accent, lighten($accent, 18%));
+  transform: rotate(45deg);
+}
+
+.site-nav .page-link {
+  padding: 6px 12px;
+  border-radius: 999px;
+  color: $text-sub;
+  @include relative-font-size(0.9);
+
+  &:not(:last-child) {
+    margin-right: 4px;
+  }
+
+  &:hover {
+    background-color: $accent-soft;
+    color: $accent;
+    text-decoration: none;
+  }
+
+  &.is-current {
+    background-color: $accent-soft;
+    color: $accent;
+    font-weight: 700;
+  }
 }
 
 // スマホでもハンバーガーにせずリンクを並べる(header.html でボタン自体を外している)
 @include media-query($on-palm) {
   .site-title {
     float: none;
-    display: block;
+    display: flex;
     line-height: 1;
     padding-top: $spacing-unit * 0.5;
   }
@@ -103,86 +146,198 @@ body {
     background-color: transparent;
     text-align: left;
     line-height: 1;
-    padding: ($spacing-unit * 0.4) 0 ($spacing-unit * 0.5);
+    padding: ($spacing-unit * 0.35) 0 ($spacing-unit * 0.4);
+    margin-left: -12px;
 
     .page-link {
-      display: inline;
-      padding: 0;
+      display: inline-block;
       margin-left: 0;
-      @include relative-font-size(0.9);
+      padding: 6px 12px;
+      line-height: 1.4;
 
       &:not(:last-child) {
-        margin-right: 16px;
+        margin-right: 0;
       }
     }
   }
 }
 
-.site-footer {
-  .footer-heading {
-    margin-bottom: $spacing-unit * 0.2;
-    font-weight: 700;
-  }
+// --------------------------------------------------------------------------
+// 見出し(ページタイトル・記事タイトル・本文見出し)
+// --------------------------------------------------------------------------
 
-  .footer-description {
-    margin-bottom: 0;
-    color: $grey-color;
-    @include relative-font-size(0.875);
+.post-title,
+.page-heading {
+  font-weight: 800;
+  letter-spacing: 0.01em;
+  line-height: 1.45;
+  @include relative-font-size(1.875);
+
+  @include media-query($on-palm) {
+    @include relative-font-size(1.45);
   }
 }
 
-// ==========================================================================
-// 記事一覧(Blog ページとトップページ。post-list.html)
-// ==========================================================================
+.page-heading {
+  margin-bottom: $spacing-unit * 0.8;
+}
+
+.post-header {
+  margin-bottom: $spacing-unit * 1.2;
+  padding-bottom: $spacing-unit * 0.7;
+  border-bottom: 1px solid $line;
+
+  .post-meta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 6px;
+    margin: $spacing-unit * 0.4 0 0;
+    color: $text-sub;
+  }
+}
+
+.post-meta-sep {
+  color: $line;
+}
+
+.post-content {
+  // 見出しは太字+アクセント色の縦線で、章の切れ目がひと目で分かるようにする
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    line-height: 1.45;
+  }
+
+  h1, h2 {
+    position: relative;
+    margin-top: $spacing-unit * 1.8;
+    padding: 0.35em 0 0.35em 0.75em;
+    border-bottom: 0;
+    background-color: transparent;
+    @include relative-font-size(1.45);
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0.3em;
+      bottom: 0.3em;
+      width: 5px;
+      border-radius: 3px;
+      background-color: $accent;
+    }
+
+    @include media-query($on-palm) {
+      @include relative-font-size(1.25);
+    }
+  }
+
+  h3 {
+    margin-top: $spacing-unit * 1.3;
+    padding-bottom: 0.3em;
+    border-bottom: 2px solid $line;
+    @include relative-font-size(1.2);
+
+    @include media-query($on-palm) {
+      @include relative-font-size(1.1);
+    }
+  }
+
+  h4 {
+    @include relative-font-size(1.05);
+  }
+
+  // 最初の見出しの上に余白が空きすぎないように
+  > :first-child {
+    margin-top: 0;
+  }
+
+  a {
+    text-decoration: underline;
+    text-decoration-color: rgba(143, 58, 58, 0.35);
+    text-underline-offset: 3px;
+
+    &:hover {
+      text-decoration-color: $accent;
+    }
+  }
+
+  strong {
+    background: linear-gradient(transparent 62%, rgba(255, 214, 102, 0.55) 62%);
+  }
+
+  hr {
+    margin: ($spacing-unit * 1.2) 0;
+    border: 0;
+    border-top: 1px solid $line;
+  }
+}
+
+// --------------------------------------------------------------------------
+// 記事一覧カード(Blog ページとトップページ。post-list.html)
+// --------------------------------------------------------------------------
 
 .post-list {
+  display: grid;
+  gap: 14px;
   margin: 0 0 $spacing-unit;
   padding: 0;
   list-style: none;
-  border-top: 1px solid $grey-color-light;
 
   > li {
     margin: 0;
   }
 }
 
-// トップページでは見出しの下線と重なるので上線を消す
-h2 + .post-list {
-  border-top: 0;
-}
-
-.post-item {
-  border-bottom: 1px solid $grey-color-light;
-}
-
-// 1件全体をクリックできるリンクにし、タイトル→日付→抜粋の順で1かたまりに見せる
 .post-item-link {
+  position: relative;
   display: block;
-  padding: ($spacing-unit * 0.6) ($spacing-unit * 0.4);
-  margin: 0 ($spacing-unit * -0.4);
-  border-radius: 6px;
+  padding: ($spacing-unit * 0.75) ($spacing-unit * 0.9);
+  border: 1px solid $line;
+  border-radius: $radius;
+  background-color: $card-bg;
+  box-shadow: $shadow;
   color: $text-color;
   text-decoration: none;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+
+  @include media-query($on-palm) {
+    padding: ($spacing-unit * 0.6) ($spacing-unit * 0.6);
+  }
 
   &:visited {
     color: $text-color;
   }
 
   &:hover {
-    background-color: rgba(143, 58, 58, 0.05);
+    transform: translateY(-2px);
+    border-color: rgba(143, 58, 58, 0.35);
+    box-shadow: $shadow-hover;
     text-decoration: none;
 
     .post-item-title {
-      color: $brand-color;
-      text-decoration: underline;
+      color: $accent;
     }
   }
+}
+
+.post-item-date {
+  display: inline-block;
+  margin-bottom: 0.5em;
+  padding: 0.1em 0.65em;
+  border-radius: 999px;
+  background-color: $accent-soft;
+  color: $accent;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  @include relative-font-size(0.75);
 }
 
 .post-item-title {
   display: block;
   font-weight: 700;
   line-height: 1.5;
+  transition: color 0.15s ease;
   @include relative-font-size(1.15);
 
   @include media-query($on-palm) {
@@ -190,23 +345,316 @@ h2 + .post-list {
   }
 }
 
-.post-item-date {
-  display: block;
-  margin-top: 0.25em;
-  color: $grey-color;
-  @include relative-font-size(0.8);
-}
-
 .post-item-excerpt {
   display: -webkit-box;
-  margin-top: 0.4em;
+  margin-top: 0.45em;
   overflow: hidden;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
   line-clamp: 2;
-  color: $grey-color-dark;
-  line-height: 1.7;
+  color: $text-sub;
+  line-height: 1.75;
+  @include relative-font-size(0.875);
+}
+
+// --------------------------------------------------------------------------
+// トップページ
+// --------------------------------------------------------------------------
+
+.home-hero {
+  position: relative;
+  overflow: hidden;
+  padding: ($spacing-unit * 1.5) ($spacing-unit * 1.6);
+  background:
+    radial-gradient(circle at 100% 0%, rgba(143, 58, 58, 0.16), transparent 55%),
+    radial-gradient(circle at 0% 100%, rgba(214, 160, 90, 0.14), transparent 50%),
+    $card-bg;
+
+  @include media-query($on-palm) {
+    padding: ($spacing-unit * 1) ($spacing-unit * 0.7);
+  }
+}
+
+.home-hero-eyebrow {
+  margin: 0 0 0.3em;
+  color: $accent;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  @include relative-font-size(0.75);
+}
+
+.home-hero-title {
+  margin: 0 0 0.25em;
+  font-weight: 800;
+  letter-spacing: 0.01em;
+  line-height: 1.2;
+  @include relative-font-size(2.5);
+
+  @include media-query($on-palm) {
+    @include relative-font-size(2);
+  }
+}
+
+.home-hero-lead {
+  margin: 0;
+  color: $text-sub;
+  @include relative-font-size(1.05);
+}
+
+.home-section {
+  margin-top: $spacing-unit * 1.6;
+}
+
+// セクション見出し: 小さなアクセントの線を添える
+.section-heading {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: $spacing-unit * 0.6;
+  font-weight: 800;
+  @include relative-font-size(1.25);
+
+  &::before {
+    content: "";
+    width: 18px;
+    height: 4px;
+    border-radius: 2px;
+    background-color: $accent;
+  }
+}
+
+.link-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  > li {
+    margin: 0;
+  }
+
+  @include media-query($on-palm) {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+}
+
+.link-card {
+  display: block;
+  height: 100%;
+  box-sizing: border-box;
+  padding: ($spacing-unit * 0.6) ($spacing-unit * 0.7);
+  border: 1px solid $line;
+  border-radius: $radius;
+  background-color: $card-bg;
+  box-shadow: $shadow;
+  color: $text-color;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+
+  &:visited {
+    color: $text-color;
+  }
+
+  &:hover {
+    transform: translateY(-2px);
+    border-color: rgba(143, 58, 58, 0.35);
+    box-shadow: $shadow-hover;
+    text-decoration: none;
+
+    .link-card-name {
+      color: $accent;
+    }
+  }
+}
+
+.link-card-name {
+  display: block;
+  font-weight: 700;
+
+  &::after {
+    content: " →";
+    color: $accent;
+  }
+}
+
+.link-card-desc {
+  display: block;
+  margin-top: 0.2em;
+  color: $text-sub;
+  line-height: 1.6;
+  @include relative-font-size(0.85);
+}
+
+.work-card {
+  padding: ($spacing-unit * 0.8) ($spacing-unit * 0.9);
+
+  p {
+    margin-bottom: 0.6em;
+  }
+
+  @include media-query($on-palm) {
+    padding: ($spacing-unit * 0.6);
+  }
+}
+
+.work-card-title {
+  margin-bottom: 0.3em;
+  font-weight: 700;
+  @include relative-font-size(1.1);
+}
+
+.work-card-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0;
+
+  a {
+    padding: 0.2em 0.9em;
+    border: 1px solid rgba(143, 58, 58, 0.35);
+    border-radius: 999px;
+    @include relative-font-size(0.85);
+
+    &:hover {
+      background-color: $accent;
+      border-color: $accent;
+      color: #fff;
+      text-decoration: none;
+    }
+  }
+}
+
+.section-more {
+  margin: 0;
+  text-align: center;
+}
+
+.button {
+  display: inline-block;
+  padding: 0.6em 1.6em;
+  border-radius: 999px;
+  background-color: $accent;
+  color: #fff;
+  font-weight: 700;
   @include relative-font-size(0.9);
+
+  &:visited {
+    color: #fff;
+  }
+
+  &:hover {
+    background-color: darken($accent, 8%);
+    color: #fff;
+    text-decoration: none;
+  }
+}
+
+.home-about {
+  margin-top: $spacing-unit * 1.6;
+  color: $text-sub;
+  text-align: center;
+  @include relative-font-size(0.9);
+}
+
+// --------------------------------------------------------------------------
+// 記事ページ下部: 前後の記事・一覧へ戻る
+// --------------------------------------------------------------------------
+
+.post-nav {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: $spacing-unit;
+
+  @include media-query($on-palm) {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+}
+
+.post-nav-link {
+  display: block;
+  padding: ($spacing-unit * 0.55) ($spacing-unit * 0.7);
+  border: 1px solid $line;
+  border-radius: $radius;
+  background-color: $card-bg;
+  box-shadow: $shadow;
+  color: $text-color;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+
+  &:visited {
+    color: $text-color;
+  }
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: $shadow-hover;
+    text-decoration: none;
+  }
+}
+
+// 古い記事だけのときも右側に置く
+.post-nav-older {
+  grid-column: 2;
+  text-align: right;
+
+  @include media-query($on-palm) {
+    grid-column: auto;
+  }
+}
+
+.post-nav-label {
+  display: block;
+  color: $accent;
+  font-weight: 700;
+  @include relative-font-size(0.75);
+}
+
+.post-nav-title {
+  display: block;
+  margin-top: 0.2em;
+  font-weight: 700;
+  line-height: 1.5;
+  @include relative-font-size(0.9);
+}
+
+.back-to-list {
+  margin-top: $spacing-unit;
+  text-align: center;
+  @include relative-font-size(0.9);
+}
+
+// --------------------------------------------------------------------------
+// フッター
+// --------------------------------------------------------------------------
+
+.site-footer {
+  border-top: 0;
+  background-color: #2a2422;
+  color: #cfc7c2;
+  padding: ($spacing-unit * 1.2) 0;
+
+  .footer-heading {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: $spacing-unit * 0.25;
+    color: #fff;
+    font-weight: 800;
+  }
+
+  .footer-description {
+    margin-bottom: 0;
+    color: #a9a09a;
+    @include relative-font-size(0.875);
+  }
+
+  .back-to-top a {
+    color: #a9a09a;
+  }
 }
 
 // ==========================================================================
@@ -256,24 +704,15 @@ h2 + .post-list {
 // ==========================================================================
 
 .post-content {
-  // 大見出しは下線を入れてセクションの区切りを分かりやすく
-  h1, h2 {
-    border-bottom: 1px solid $grey-color-light;
-    padding-bottom: 0.3em;
-    margin-top: $spacing-unit * 1.5;
-  }
-
-  h3, h4, h5, h6 {
-    margin-top: $spacing-unit;
-  }
-
   // 引用: 斜体をやめて背景色つきボックスに(和文は斜体が効かないため)
   blockquote {
     font-style: normal;
     letter-spacing: normal;
-    background-color: $grey-color-light;
-    border-left: 4px solid $grey-color;
-    padding: ($spacing-unit * 0.3) ($spacing-unit * 0.5);
+    color: #4a4440;
+    background-color: #f7f5f2;
+    border-left: 4px solid #d8d1ca;
+    border-radius: 0 8px 8px 0;
+    padding: ($spacing-unit * 0.4) ($spacing-unit * 0.6);
   }
 
   // テーブル: 列数が多くても崩れないようスマホでは横スクロールに
