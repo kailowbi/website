@@ -48,3 +48,17 @@ bin/bootstrap
 ```
 
 bundler の導入・`bundle install`・`bundle exec jekyll serve` をまとめて実行します。すでに入っているものは入れ直しません。引数はそのまま `jekyll serve` に渡るので、ポートを変えるときは `bin/bootstrap --port 4001` のように指定します。
+
+## スマホ幅のはみ出しチェック
+
+長い URL やコードなどでページが画面幅より広くなると、スマホでページ全体が横スクロールできてしまい読みにくくなります。PR を作ると GitHub Actions（`.github/workflows/check-overflow.yml`）が全ページを幅 320px / 375px で開き、はみ出しているページがあれば失敗します。
+
+手元で確かめるときは次のように実行します（playwright が必要です）。
+
+```bash
+bundle exec jekyll build
+npm install --no-save playwright
+node bin/check-overflow.js
+```
+
+はみ出していた場合は、原因の要素が表示されます。表とコードブロックは中で横スクロールするので、はみ出しても問題にしていません。
