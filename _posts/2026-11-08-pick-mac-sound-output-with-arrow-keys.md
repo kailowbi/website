@@ -1,5 +1,7 @@
 ---
 title: "Macの音声出力先を1キーで出して矢印キーで選ぶ"
+description: "右 command + A で Mac の音声出力デバイスの一覧を出し、矢印キーで選んで切り替える。AppleScript と SwitchAudioSource を使った完成版のスクリプトを載せている。"
+tags: [mac-automation]
 ---
 
 Windowsでは `Win+Ctrl+V` を押すと、サウンド出力のクイック設定が開く。そこで矢印キーでスピーカーかイヤホンかを選んで Enter。マウスに手を伸ばさずに出力先を切り替えられるので、かなり重宝していた。

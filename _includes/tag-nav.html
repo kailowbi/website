@@ -1,0 +1,9 @@
+{%- comment -%} テーマ(タグ)への入口。Blog ページとトップページで使う {%- endcomment -%}
+<p class="tag-nav">
+  <span class="tag-nav-label">テーマ別:</span>
+  {%- for tag in site.data.tags -%}
+  {%- if site.tags[tag.id] -%}
+  <a class="post-tag" href="{{ '/tags/' | relative_url }}#{{ tag.id }}">{{ tag.name }}</a>
+  {%- endif -%}
+  {%- endfor -%}
+</p>

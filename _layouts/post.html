@@ -13,6 +13,7 @@ layout: default
       {%- if page.author -%}
         • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ page.author }}</span></span>
       {%- endif -%}</p>
+    {%- include post-tags.html -%}
   </header>
 
   <div class="post-content e-content" itemprop="articleBody">
@@ -20,6 +21,8 @@ layout: default
   </div>
 
   {%- include share-buttons.html -%}
+
+  {%- include related-posts.html -%}
 
   {%- include code-block.html -%}
 

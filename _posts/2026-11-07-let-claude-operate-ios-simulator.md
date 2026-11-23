@@ -1,5 +1,7 @@
 ---
 title: "iOSシミュレータをClaudeに操作させる"
+description: "Claude Code から iOS シミュレータ上のアプリを操作して動作確認する方法。computer-use MCP と XcodeBuildMCP の違いと、うまくいった手順をまとめた。"
+tags: [ai]
 ---
 
 Claude Code から iOS シミュレータ上のアプリを動かして動作確認する方法のメモ。

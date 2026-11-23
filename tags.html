@@ -1,0 +1,16 @@
+---
+layout: page
+title: テーマ別の記事
+permalink: /tags/
+---
+
+{% for tag in site.data.tags %}
+{%- assign tagged = site.tags[tag.id] -%}
+{%- if tagged and tagged.size > 0 -%}
+<section class="tag-section" id="{{ tag.id }}">
+<h2>{{ tag.name }}（{{ tagged.size }}）</h2>
+<p>{{ tag.description }}</p>
+{% include post-list.html posts=tagged %}
+</section>
+{%- endif -%}
+{% endfor %}

@@ -1,5 +1,7 @@
 ---
 title: "Chromeの翻訳を1キーでトグルするAppleScript"
+description: "右 command + H の 1 キーで、Chrome のページ翻訳を切り替える AppleScript。Karabiner-Elements からの呼び出し方と、完成版のスクリプトを載せている。"
+tags: [mac-automation]
 ---
 
 英語のドキュメントを読んでいると、「ここだけ日本語で読みたい」と「やっぱり原文で確認したい」を何度も行き来する。Chromeの翻訳は便利だけど、毎回アドレスバーの翻訳アイコンを押して、ポップアップで言語を選び直すのが地味に面倒だった。

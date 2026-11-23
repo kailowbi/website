@@ -1,0 +1,9 @@
+{%- comment -%} 記事のタグ。表示名は _data/tags.yml から引き、/tags/ の該当見出しへリンクする {%- endcomment -%}
+{%- if page.tags and page.tags.size > 0 -%}
+<ul class="post-tags">
+  {%- for tag_id in page.tags -%}
+  {%- assign tag = site.data.tags | where: "id", tag_id | first -%}
+  <li><a class="post-tag" href="{{ '/tags/' | relative_url }}#{{ tag_id }}">{{ tag.name | default: tag_id }}</a></li>
+  {%- endfor -%}
+</ul>
+{%- endif -%}

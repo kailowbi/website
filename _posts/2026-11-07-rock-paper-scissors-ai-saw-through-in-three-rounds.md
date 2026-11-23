@@ -1,5 +1,7 @@
 ---
 title: "じゃんけんの勝ち癖をAIに突かせてみたら、3回で見破られた話"
+description: "人間のじゃんけんの「勝ち癖」を読む AI を作ったら、ルールベースでは 3 回で見破られた。予測の仕組みを作り直すまでの試行錯誤。ブラウザで遊べる。"
+tags: [ai]
 ---
 
 実際に遊べます → https://janken-training-app.playgroundsss.workers.dev
