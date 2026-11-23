@@ -1,10 +1,10 @@
 ---
 title: "commandの単押しでEnterとBackspaceを打つKarabiner設定【seiha式キーバインド 設定編1】"
-description: "左 command の単押しで Enter、右 command の単押しで Backspace にする Karabiner-Elements の設定。ワンクリックで読み込める JSON と、to_if_alone まわりの設定の意味、使ってみて詰まった点を書く。"
+description: "左 command の単押しで Enter、右 command の単押しで Backspace にする Karabiner-Elements の設定。ワンクリックで読み込める JSON と、to_if_alone まわりの設定の意味、使ってみて困った点を書く。"
 tags: [keyboard]
 ---
 
-【要記入：書き出し。親指でEnterを押すようになって何が変わったか、1〜2文】
+EnterとBackspaceを親指で押すようにしてから、文字を打っている間に手がほとんど動かなくなった。Backspaceのたびに右手を上に伸ばして、戻ってきたら指の位置を探し直す、ということがない。ここ数年、ずっとこの設定で使っている。
 
 [「seiha式キーバインド」の考え方]({% post_url 2026-11-22-keybindings-that-keep-hands-on-home-row %})で書いた配置のうち、この記事では一番効果が大きい親指キーの設定を書く。
 
@@ -27,11 +27,7 @@ Karabiner-Elementsが入っていれば、下のリンクから読み込める�
 
 [seiha-thumb-keys.json をダウンロード](/assets/files/karabiner-command-tap-to-enter-backspace/seiha-thumb-keys.json)
 
-### 元に戻すとき
-
-「Complex Modifications」の画面で、ルールの「Remove」を押せば元の`command`に戻る。
-
-【要確認：Karabiner-Elementsのバージョン。記事を書いた時点で動かしているもの】
+元に戻すときは、「Complex Modifications」の画面でルールの「Remove」を押せば普通の`command`に戻る。
 
 ## 設定の中身
 
@@ -43,39 +39,31 @@ Karabiner-Elementsが入っていれば、下のリンクから読み込める�
   "from": { "key_code": "left_command", "modifiers": { "optional": ["any"] } },
   "to": [{ "key_code": "left_command" }],
   "to_if_alone": [{ "key_code": "return_or_enter" }],
-  "to_if_held_down": [{ "key_code": "left_command", "halt": true }],
   "parameters": { "basic.to_if_alone_timeout_milliseconds": 200 }
 }
 ```
 
-### `to`：押した瞬間は普通のcommand
+### 押した瞬間は普通のcommand
 
 `to`に`left_command`を入れているので、押した時点ではただの`command`として動く。`command` + `c`のようなショートカットも、`command` + クリックも、今までどおり使える。
 
-### `to_if_alone`：すぐ離したらEnter
+### すぐ離したらEnter
 
-他のキーを押さずに離すと、`to_if_alone`のEnterが送られる。「すぐ」の長さが`basic.to_if_alone_timeout_milliseconds`で、ここでは200ミリ秒にしている。
+他のキーを押さずに離すと、`to_if_alone`のEnterが送られる。この「すぐ」の長さが`basic.to_if_alone_timeout_milliseconds`。
 
-【要記入：200ミリ秒にした理由。デフォルト（1000ミリ秒）や他の値を試したなら、そのときどうだったか】
+最初はKarabinerの標準の1000ミリ秒のまま使っていた。これだと、`command`を押して「やっぱりやめた」と離したときにもEnterが出てしまう。1秒は思ったより長くて、ショートカットを押しかけて考え直す、くらいの間は余裕で収まる。何度か試して200ミリ秒まで縮めた。これくらいなら、意識してポンと押したときだけEnterになる。
 
-### `optional: any`：shiftと一緒に押せばshift + Enter
+### shiftと一緒に押せばshift + Enter
 
-`from`の`modifiers`に`optional: ["any"]`を入れているので、他の修飾キーを押しながらでも単押しが効く。`shift`を押しながら左`command`を単押しすればshift + Enterになる。
+`from`の`modifiers`に`optional: ["any"]`を入れているので、他の修飾キーを押しながらでも単押しが効く。`shift`を押しながら左`command`を単押しすれば、shift + Enterになる。
 
-【要記入：shift + Enter（チャットでの改行など）を実際に使っているか】
+これはけっこう使っている。チャットで送信せずに改行したいときは、`shift`を押したまま親指でポン。Enterの位置が変わっても、shift + Enterの使い方はそのまま持ってこられる。
 
-### `to_if_held_down`
+## 使ってみて困ったところ
 
-【要確認：`to_if_held_down`に`halt: true`を入れている理由。長押ししたあとに離してもEnterが出ないようにするため、など】
+一番困るのは、Backspaceを押しっぱなしにしても1文字しか消えないこと。`to_if_alone`は「押して離した」ときに1回送るだけなので、普通のBackspaceのようなキーリピートが効かない。
 
-## 使ってみて詰まったところ
-
-【要記入：ここが記事の中心。たとえば次のような話】
-
-- 【チャットで、`command`を押しかけてやめただけでEnterが出て送信してしまった件。どう慣れたか、何か対策したか】
-- 【Backspaceを押しっぱなしにしても1文字しか消えない件。元のdeleteキーと使い分けるようになったか】
-- 【設定を入れてから、指が慣れるまでの期間】
-- 【Karabinerの入っていないMacを触ったときの話】
+なので、まとめて消したいときは左`command`を押しながら右`command`を単押ししている。右`command`のルールにも`optional: ["any"]`が入っているので、これは`command` + Backspaceになる。macOSでは`command` + Backspaceは行頭まで削除なので、1行ぶんなら一発で消える。
 
 ## 次は
 

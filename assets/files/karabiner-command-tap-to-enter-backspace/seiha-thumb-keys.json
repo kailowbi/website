@@ -6,11 +6,27 @@
       "manipulators": [
         {
           "type": "basic",
-          "from": { "key_code": "left_command", "modifiers": { "optional": ["any"] } },
-          "to": [{ "key_code": "left_command" }],
-          "to_if_alone": [{ "key_code": "return_or_enter" }],
-          "to_if_held_down": [{ "key_code": "left_command", "halt": true }],
-          "parameters": { "basic.to_if_alone_timeout_milliseconds": 200 }
+          "from": {
+            "key_code": "left_command",
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "left_command"
+            }
+          ],
+          "to_if_alone": [
+            {
+              "key_code": "return_or_enter"
+            }
+          ],
+          "parameters": {
+            "basic.to_if_alone_timeout_milliseconds": 200
+          }
         }
       ]
     },
@@ -19,11 +35,27 @@
       "manipulators": [
         {
           "type": "basic",
-          "from": { "key_code": "right_command", "modifiers": { "optional": ["any"] } },
-          "to": [{ "key_code": "right_command" }],
-          "to_if_alone": [{ "key_code": "delete_or_backspace" }],
-          "to_if_held_down": [{ "key_code": "right_command", "halt": true }],
-          "parameters": { "basic.to_if_alone_timeout_milliseconds": 200 }
+          "from": {
+            "key_code": "right_command",
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "right_command"
+            }
+          ],
+          "to_if_alone": [
+            {
+              "key_code": "delete_or_backspace"
+            }
+          ],
+          "parameters": {
+            "basic.to_if_alone_timeout_milliseconds": 200
+          }
         }
       ]
     }
