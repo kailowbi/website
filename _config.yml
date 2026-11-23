@@ -6,6 +6,10 @@ theme: minima
 
 primary_color: "#8f3a3a"
 
+# 記事ページの日付表記(一覧と同じ YYYY-MM-DD にそろえる)
+minima:
+  date_format: "%Y-%m-%d"
+
 # 独自ドメインを使う場合はこのファイルと同じ内容の CNAME ファイルにも反映します
 url: "https://beanz.click"
 

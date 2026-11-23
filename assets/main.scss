@@ -13,11 +13,17 @@ $base-font-family: -apple-system, BlinkMacSystemFont,
   "Yu Gothic", Meiryo, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
   "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
 
-@import "minima";
+// リンク色をテーマ既定の青からサイトのアクセントカラーにそろえる
+$brand-color: {{ site.primary_color }};
 
-.site-header {
-  border-top: 5px solid {{ site.primary_color }};
-}
+// 文字色・グレーを GitHub/Zenn に近い、少し青みのあるニュートラルな色にする
+$text-color: #1f2328;
+$background-color: #ffffff;
+$grey-color: #6e7781;
+$grey-color-light: #e5e7eb;
+$grey-color-dark: #424a53;
+
+@import "minima";
 
 // Safari 26 以降は theme-color メタタグを廃止し、body の background-color を
 // タブ/ツールバー色の参照元にするため、meta タグと合わせて指定する
@@ -30,6 +36,398 @@ body {
 .page-content,
 .site-footer {
   background-color: $background-color;
+}
+
+// ==========================================================================
+// 見出し・ヘッダー・フッター(読みやすさの調整)
+// ==========================================================================
+
+// minima の見出しは細字で本文との差が大きさだけなので、太字にして構成をつかみやすくする
+.post-title,
+.page-heading {
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 1.4;
+  @include relative-font-size(1.875);
+
+  @include media-query($on-palm) {
+    @include relative-font-size(1.5);
+  }
+}
+
+.post-header {
+  margin-bottom: $spacing-unit;
+}
+
+.post-content {
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    line-height: 1.4;
+  }
+
+  h2 {
+    @include relative-font-size(1.5);
+
+    @include media-query($on-palm) {
+      @include relative-font-size(1.3);
+    }
+  }
+
+  h3 {
+    @include relative-font-size(1.25);
+
+    @include media-query($on-palm) {
+      @include relative-font-size(1.15);
+    }
+  }
+
+  h4 {
+    @include relative-font-size(1.1);
+  }
+}
+
+.site-title {
+  font-weight: 700;
+}
+
+// スマホでもハンバーガーにせずリンクを並べる(header.html でボタン自体を外している)
+@include media-query($on-palm) {
+  .site-title {
+    float: none;
+    display: block;
+    line-height: 1;
+    padding-top: $spacing-unit * 0.5;
+  }
+
+  .site-nav {
+    position: static;
+    float: none;
+    border: 0;
+    background-color: transparent;
+    text-align: left;
+    line-height: 1;
+    padding: ($spacing-unit * 0.4) 0 ($spacing-unit * 0.5);
+
+    .page-link {
+      display: inline;
+      padding: 0;
+      margin-left: 0;
+      @include relative-font-size(0.9);
+
+      &:not(:last-child) {
+        margin-right: 16px;
+      }
+    }
+  }
+}
+
+.site-footer {
+  .footer-heading {
+    margin-bottom: $spacing-unit * 0.2;
+    font-weight: 700;
+  }
+
+  .footer-description {
+    margin-bottom: 0;
+    color: $grey-color;
+    @include relative-font-size(0.875);
+  }
+}
+
+// ==========================================================================
+// 記事一覧(Blog ページとトップページ。post-list.html)
+// ==========================================================================
+
+.post-list {
+  margin: 0 0 $spacing-unit;
+  padding: 0;
+  list-style: none;
+  border-top: 1px solid $grey-color-light;
+
+  > li {
+    margin: 0;
+  }
+}
+
+// トップページでは見出しの下線と重なるので上線を消す
+h2 + .post-list {
+  border-top: 0;
+}
+
+.post-item {
+  border-bottom: 1px solid $grey-color-light;
+}
+
+// 1件全体をクリックできるリンクにし、タイトル→日付の順で並べる
+.post-item-link {
+  display: block;
+  padding: ($spacing-unit * 0.55) 0;
+  color: $text-color;
+  text-decoration: none;
+
+  &:visited {
+    color: $text-color;
+  }
+
+  &:hover {
+    text-decoration: none;
+
+    .post-item-title {
+      color: $brand-color;
+      text-decoration: underline;
+    }
+  }
+}
+
+.post-item-title {
+  display: block;
+  font-weight: 700;
+  line-height: 1.5;
+  @include relative-font-size(1.1);
+
+  @include media-query($on-palm) {
+    @include relative-font-size(1.0);
+  }
+}
+
+.post-item-date {
+  display: block;
+  margin-top: 0.3em;
+  color: $grey-color;
+  @include relative-font-size(0.8);
+}
+
+// ==========================================================================
+// モダンな見た目への調整(装飾は増やさず、余白・線・文字の詰め方で整える)
+// ==========================================================================
+
+::selection {
+  background-color: rgba(143, 58, 58, 0.15);
+}
+
+// 和文の見出しは字間を詰める(palt)と締まって見える
+.site-title,
+.post-title,
+.page-heading,
+.post-content h1,
+.post-content h2,
+.post-content h3,
+.post-item-title {
+  font-feature-settings: "palt";
+  letter-spacing: 0.02em;
+}
+
+// ヘッダー: 上の太い線をやめ、スクロールしても上に残る白いバーにする
+// (body の背景はアクセントカラーなので、半透明にすると赤く透けてしまう)
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  min-height: 0;
+  border-top: 0;
+  border-bottom: 1px solid $grey-color-light;
+  background-color: $background-color;
+
+  .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+
+    // minima の clearfix 用 ::after が flex の要素扱いになり、メニューが右端に寄らなくなるので消す
+    &::after {
+      display: none;
+    }
+  }
+}
+
+.site-title {
+  float: none;
+  line-height: 1;
+  letter-spacing: 0;
+  @include relative-font-size(1.25);
+
+  &,
+  &:visited {
+    color: $text-color;
+  }
+}
+
+.site-nav {
+  float: none;
+  line-height: 1;
+
+  .page-link {
+    color: $grey-color;
+    @include relative-font-size(0.875);
+    transition: color 0.15s ease;
+
+    &:hover {
+      color: $text-color;
+      text-decoration: none;
+    }
+
+    &:not(:last-child) {
+      margin-right: 24px;
+    }
+  }
+}
+
+// スマホは2段(サイト名/メニュー)にし、画面を狭めないよう追従させない
+@include media-query($on-palm) {
+  .site-header {
+    position: static;
+
+    .wrapper {
+      display: block;
+      height: auto;
+    }
+  }
+
+  .site-title {
+    padding-top: 18px;
+  }
+
+  .site-nav {
+    padding: 14px 0 16px;
+
+    .page-link:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
+}
+
+.page-content {
+  padding: ($spacing-unit * 1.6) 0 ($spacing-unit * 2.4);
+
+  @include media-query($on-palm) {
+    padding: $spacing-unit 0 ($spacing-unit * 1.6);
+  }
+}
+
+// 記事タイトル: 大きめ・字間を詰めて、日付との間に余白
+.post-title,
+.page-heading {
+  letter-spacing: 0.01em;
+  @include relative-font-size(2);
+
+  @include media-query($on-palm) {
+    @include relative-font-size(1.5);
+  }
+}
+
+.post-header {
+  margin-bottom: $spacing-unit * 1.4;
+
+  .post-meta {
+    margin-top: 0.6em;
+  }
+}
+
+.post-content {
+  h1, h2 {
+    border-bottom-color: $grey-color-light;
+  }
+
+  // 本文中のリンクは下線を少し離して細く引く
+  a {
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.2em;
+    text-decoration-color: rgba(143, 58, 58, 0.4);
+    transition: text-decoration-color 0.15s ease;
+
+    &:hover {
+      text-decoration-color: currentColor;
+    }
+  }
+
+  // インラインコード: 色付きの背景をやめ、薄いグレーに
+  :not(pre) > code {
+    background-color: #eff1f3;
+    color: $text-color;
+    border-radius: 6px;
+  }
+
+  // コードブロックの角を本文の部品とそろえる
+  div.highlighter-rouge {
+    border-radius: 10px;
+  }
+
+  // 表: しま模様をやめ、細い罫線と角丸だけにする
+  table {
+    border: 1px solid $grey-color-light;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 8px;
+
+    th, td {
+      border: 0;
+      border-bottom: 1px solid $grey-color-light;
+      padding: 0.6em 1em;
+    }
+
+    th {
+      background-color: #f6f8fa;
+      font-weight: 600;
+    }
+
+    th + th,
+    td + td {
+      border-left: 1px solid $grey-color-light;
+    }
+
+    tr:last-child td {
+      border-bottom: 0;
+    }
+
+    tr:nth-child(even) {
+      background-color: transparent;
+    }
+  }
+
+  img {
+    border-radius: 8px;
+  }
+}
+
+// トップページなど、本文の先頭にある見出しの上に余白を空けない
+.post-content > :first-child {
+  margin-top: 0;
+}
+
+// 記事一覧: 本文リンク用の下線は付けず、ホバー時にタイトルの色だけ変える
+.post-content .post-item-link {
+  text-decoration: none;
+}
+
+.post-item-title {
+  transition: color 0.15s ease;
+}
+
+.post-item-link:hover .post-item-title {
+  text-decoration: none;
+}
+
+// シェアボタンを丸みのあるボタンに
+.share-button-x {
+  border-radius: 999px;
+  padding: 0.3em 1em;
+}
+
+// フッター: 白背景のまま、中央寄せの小さな文字で控えめに
+.site-footer {
+  padding: ($spacing-unit * 1.2) 0;
+  border-top: 1px solid $grey-color-light;
+  text-align: center;
+
+  .footer-heading {
+    @include relative-font-size(1);
+  }
+
+  .back-to-top {
+    margin-top: $spacing-unit * 0.5;
+  }
 }
 
 // ==========================================================================
@@ -79,33 +477,58 @@ body {
 // ==========================================================================
 
 .post-content {
-  // 大見出しは下線を入れてセクションの区切りを分かりやすく
+  // 見出しは Zenn/Qiita にならい、h2 は下線、h3 は左に細い線
   h1, h2 {
     border-bottom: 1px solid $grey-color-light;
     padding-bottom: 0.3em;
-    margin-top: $spacing-unit * 1.5;
+    margin-top: $spacing-unit * 1.8;
   }
 
-  h3, h4, h5, h6 {
+  h3 {
+    margin-top: $spacing-unit * 1.3;
+    padding-left: 0.6em;
+    border-left: 4px solid #d0d7de;
+  }
+
+  h4, h5, h6 {
     margin-top: $spacing-unit;
   }
 
-  // 引用: 斜体をやめて背景色つきボックスに(和文は斜体が効かないため)
+  // 段落とリストの間隔を少し広げる
+  p,
+  ul,
+  ol {
+    margin-bottom: 1.3em;
+  }
+
+  li + li {
+    margin-top: 0.3em;
+  }
+
+  // 引用: 背景は付けず、左の線と灰色の文字だけにする(和文は斜体が効かないため斜体もやめる)
   blockquote {
     font-style: normal;
     letter-spacing: normal;
-    background-color: $grey-color-light;
-    border-left: 4px solid $grey-color;
-    padding: ($spacing-unit * 0.3) ($spacing-unit * 0.5);
+    color: #5c6670;
+    border-left: 3px solid #d0d7de;
+    padding: 0.2em 0 0.2em 1em;
+    @include relative-font-size(1);
+
+    > :last-child {
+      margin-bottom: 0;
+    }
   }
 
   // テーブル: 列数が多くても崩れないようスマホでは横スクロールに
   table {
     display: block;
     overflow-x: auto;
+    // display: block だと外枠だけ横幅いっぱいに伸びるので、中身の幅に合わせる
+    width: fit-content;
+    max-width: 100%;
 
     th {
-      background-color: $grey-color-light;
+      background-color: #f6f8fa;
       white-space: nowrap;
     }
   }
@@ -155,7 +578,8 @@ $code-font: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", mo
     border: 0;
     border-radius: 4px;
     background-color: rgba(135, 131, 120, 0.15);
-    color: #c7254e;
+    // 赤系だとエラーや強調に見えて目を引きすぎるので、本文に近い色にする
+    color: #3b3b3b;
   }
 
   div.highlighter-rouge {
