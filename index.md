@@ -21,4 +21,10 @@ permalink: /
 
 - **TabReturn (Last Selected Tab)**: タブを閉じたときに、最後に選んでいたタブへ戻る Chrome 拡張機能。（[Chrome ウェブストア](https://chromewebstore.google.com/detail/tab-return-last-selected/aocnfinhcbocfcanlcmjbjkickmpbeek) / [GitHub](https://github.com/kailowbi/tab-return)）
 
+## 最新の記事
+
+{% include post-list.html limit=5 %}
+
+[すべての記事を見る →](/blog/)
+
 サイトについては [About](/about/) をご覧ください。
