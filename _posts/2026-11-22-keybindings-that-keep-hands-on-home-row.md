@@ -131,6 +131,8 @@ controlレイヤーは全アプリで効くので、もともと`control`に割�
 
 ## 設定編へ
 
-考え方は以上。Karabiner-Elementsでの具体的な設定は、設定編で書く。
+考え方は以上。Karabiner-Elementsでの具体的な設定は、設定編で書いている。
+
+- [commandの単押しでEnterとBackspaceを打つKarabiner設定]({% post_url 2026-11-23-karabiner-command-tap-to-enter-backspace %})
 
 自分はさらに「英数」「かな」と`command`の位置を入れ替えて、`command`を親指のすぐ横に持ってきている。Windowsでも同じ物理キーに同じ操作が来るようにAutoHotkeyで揃えている。どちらもそれぞれ別の話なので、また別の記事で。
