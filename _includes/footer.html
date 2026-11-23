@@ -4,7 +4,7 @@
   <div class="wrapper">
 
     {%- comment -%} サイト名が2回並んでいたため、名前1つ+説明文だけにする {%- endcomment -%}
-    <h2 class="footer-heading p-name">{{ site.author | default: site.title | escape }}</h2>
+    <h2 class="footer-heading p-name">{{ site.author.name | default: site.title | escape }}</h2>
     <p class="footer-description">{{- site.description | escape -}}</p>
 
     <p class="back-to-top">

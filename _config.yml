@@ -6,6 +6,19 @@ theme: minima
 
 primary_color: "#8f3a3a"
 
+# 書き手の情報。画面には出さず、jekyll-seo-tag が全ページの構造化データ(JSON-LD)の author に入れる
+author:
+  name: seihasync
+  url: https://beanz.click/about/
+
+# 同じ人のアカウント。jekyll-seo-tag がトップページと About の構造化データに sameAs として出す
+social:
+  name: seihasync
+  links:
+    - https://github.com/kailowbi
+    - https://x.com/seihasync
+    - https://note.com/kailowbi
+
 # 記事ページの日付表記(一覧と同じ YYYY-MM-DD にそろえる)
 minima:
   date_format: "%Y-%m-%d"

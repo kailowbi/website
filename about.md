@@ -15,6 +15,12 @@ Mac の操作でマウスや遠いキーに手を伸ばす回数を減らすた�
 
 seihasync
 
+## 作ったもの
+
+- [TabReturn (Last Selected Tab)](https://chromewebstore.google.com/detail/tab-return-last-selected/aocnfinhcbocfcanlcmjbjkickmpbeek)：タブを閉じたときに、最後に選んでいたタブへ戻る Chrome 拡張機能（[ソースコード](https://github.com/kailowbi/tab-return)）
+- 記事で紹介しているスクリプトや設定は、各記事からダウンロードできます
+- そのほかのコードやツールは [GitHub](https://github.com/kailowbi) に置いています
+
 ## 連絡・更新の追い方
 
 - 連絡: [GitHub (@kailowbi)](https://github.com/kailowbi)
