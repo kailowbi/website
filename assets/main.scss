@@ -30,6 +30,10 @@ $grey-color-dark: #424a53;
 // (page-content/footer は元の白背景に戻し、見た目への影響を避ける)
 body {
   background-color: {{ site.primary_color }};
+  // 長い URL やパス(インラインコード)のような、途中に区切りのない文字列は折り返せず、
+  // スマホで画面幅を押し広げて横スクロールを起こす。収まらないときだけ文字の途中で折り返す。
+  // break-word は表の列幅の計算(min-content)には影響しないので、表は今までどおり表の中で横スクロールする
+  overflow-wrap: break-word;
 }
 
 .site-header,
