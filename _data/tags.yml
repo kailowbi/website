@@ -1,0 +1,11 @@
+# タグの定義。記事の front matter の tags には id を書く。
+# 並び順がタグ一覧ページ(/tags/)の表示順になる。
+- id: keyboard
+  name: キーボード
+  description: キーバインド、Karabiner-Elements、OS のショートカット。手をホームポジションから離さずに操作するための設定です。
+- id: mac-automation
+  name: Mac の自動化
+  description: AppleScript と Karabiner-Elements で、よく使う操作を 1 キーで呼び出せるようにしています。
+- id: ai
+  name: AI・Claude Code
+  description: Claude Code に開発や動作確認を任せてみた記録と、AI を使って作ったものです。

@@ -431,6 +431,103 @@ h2 + .post-list {
 }
 
 // ==========================================================================
+// タグ・テーマ別の入口・関連記事
+// ==========================================================================
+
+.post-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0.8em 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+// タグは小さな枠付きのラベルにする(記事ページ・Blog・トップで共通)
+.post-tag {
+  display: inline-block;
+  padding: 0.15em 0.7em;
+  border: 1px solid $grey-color-light;
+  border-radius: 999px;
+  color: $grey-color-dark;
+  line-height: 1.6;
+  @include relative-font-size(0.8);
+  transition: border-color 0.15s ease, color 0.15s ease;
+
+  &:visited {
+    color: $grey-color-dark;
+  }
+
+  &:hover {
+    border-color: $brand-color;
+    color: $brand-color;
+    text-decoration: none;
+  }
+}
+
+.post-content .post-tag {
+  text-decoration: none;
+}
+
+.tag-nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+
+.tag-nav-label {
+  color: $grey-color;
+  @include relative-font-size(0.85);
+}
+
+.tag-section {
+  margin-bottom: $spacing-unit * 1.5;
+
+  p {
+    color: $grey-color-dark;
+  }
+}
+
+.related-posts {
+  margin-top: $spacing-unit * 1.5;
+}
+
+.related-posts-heading {
+  margin-bottom: $spacing-unit * 0.3;
+  font-weight: 700;
+  @include relative-font-size(1.1);
+}
+
+// ==========================================================================
+// 記事末尾の「この記事を書いた人」(author-box.html)
+// ==========================================================================
+
+.author-box {
+  margin-top: $spacing-unit * 1.2;
+  padding: ($spacing-unit * 0.5) 0;
+  border-top: 1px solid $grey-color-light;
+  border-bottom: 1px solid $grey-color-light;
+  color: $grey-color-dark;
+  line-height: 1.7;
+  @include relative-font-size(0.875);
+
+  p {
+    margin: 0;
+  }
+}
+
+.author-box-name {
+  color: $text-color;
+  font-weight: 700;
+}
+
+// author-box の直後はシェアボタンの上線を出さない(線が二重になるため)
+.author-box + .share-buttons {
+  border-top: 0;
+}
+
+// ==========================================================================
 // 記事末尾のシェアボタン
 // ==========================================================================
 

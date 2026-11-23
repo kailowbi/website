@@ -1,10 +1,11 @@
 {%- comment -%}
-  記事一覧(Zenn/Qiita のようにタイトルと日付だけ)。Blog ページとトップページで共用する。
-  include.limit を渡すと新しい順にその件数だけ表示する。
+  記事一覧(Zenn/Qiita のようにタイトルと日付だけ)。Blog・トップ・タグ一覧・関連記事で共用する。
+  include.posts を渡すとその記事だけを、渡さなければ全記事を新しい順に表示する。
+  include.limit を渡すと先頭からその件数だけ表示する。
   Markdown ページ内でも HTML ブロックが途切れないよう、空行を出さないこと。
 {%- endcomment -%}
-{%- assign posts = site.posts -%}
-{%- if include.limit -%}{%- assign posts = site.posts | slice: 0, include.limit -%}{%- endif -%}
+{%- assign posts = include.posts | default: site.posts -%}
+{%- if include.limit -%}{%- assign posts = posts | slice: 0, include.limit -%}{%- endif -%}
 <ul class="post-list">
 {%- for post in posts -%}
 <li class="post-item">

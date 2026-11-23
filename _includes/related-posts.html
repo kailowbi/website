@@ -1,0 +1,21 @@
+{%- comment -%}
+  関連記事: 今の記事とタグが 1 つでも同じ記事を、新しい順に最大 3 件出す。
+  該当する記事が無いときは何も出さない。
+{%- endcomment -%}
+{%- if page.tags and page.tags.size > 0 -%}
+{%- assign related = "" | split: "" -%}
+{%- for post in site.posts -%}
+  {%- if post.url == page.url -%}{%- continue -%}{%- endif -%}
+  {%- assign shares_tag = false -%}
+  {%- for tag_id in post.tags -%}
+    {%- if page.tags contains tag_id -%}{%- assign shares_tag = true -%}{%- endif -%}
+  {%- endfor -%}
+  {%- if shares_tag -%}{%- assign related = related | push: post -%}{%- endif -%}
+{%- endfor -%}
+{%- if related.size > 0 -%}
+<section class="related-posts">
+  <h2 class="related-posts-heading">関連記事</h2>
+  {%- include post-list.html posts=related limit=3 -%}
+</section>
+{%- endif -%}
+{%- endif -%}

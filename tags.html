@@ -1,0 +1,30 @@
+---
+layout: page
+title: テーマ別の記事
+permalink: /tags/
+---
+
+<section class="tag-section">
+<h2>困りごとから探す</h2>
+<table>
+<thead><tr><th>こんなとき</th><th>記事</th></tr></thead>
+<tbody>
+<tr><td>矢印キー・Enter・Backspace に手を伸ばしたくない</td><td><a href="{% post_url 2026-11-22-keybindings-that-keep-hands-on-home-row %}">seiha式キーバインドの考え方</a></td></tr>
+<tr><td>英語のページで、翻訳と原文を何度も行き来する</td><td><a href="{% post_url 2026-11-07-chrome-translate-toggle-applescript %}">Chrome の翻訳を 1 キーで切り替える</a></td></tr>
+<tr><td>イヤホンとスピーカーの切り替えが面倒</td><td><a href="{% post_url 2026-11-08-pick-mac-sound-output-with-arrow-keys %}">音声出力先を 1 キーで出して矢印キーで選ぶ</a></td></tr>
+<tr><td>Claude Code にアプリの動作確認までさせたい</td><td><a href="{% post_url 2026-11-07-let-claude-operate-ios-simulator %}">iOS シミュレータを Claude に操作させる</a></td></tr>
+<tr><td>Mac の標準ショートカットを一度整理したい</td><td><a href="{% post_url 2026-08-29-mac-keyboard-shortcuts %}">Mac のキーボードショートカットを把握する</a></td></tr>
+</tbody>
+</table>
+</section>
+
+{% for tag in site.data.tags %}
+{%- assign tagged = site.tags[tag.id] -%}
+{%- if tagged and tagged.size > 0 -%}
+<section class="tag-section" id="{{ tag.id }}">
+<h2>{{ tag.name }}（{{ tagged.size }}）</h2>
+<p>{{ tag.description }}</p>
+{% include post-list.html posts=tagged %}
+</section>
+{%- endif -%}
+{% endfor %}

@@ -1,5 +1,7 @@
 ---
 title: "Windowsのキーボードショートカットを把握する"
+description: "Windows のキーボードショートカットを、Ctrl・Alt・Win キーの役割の違いから整理した一覧。Mac 版と対になっている。"
+tags: [keyboard]
 ---
 
 Windowsのキーボードショートカットを把握しておく。Windows の思想を知る。

@@ -1,5 +1,7 @@
 ---
 title: "Macのキーボードショートカットを把握する"
+description: "Mac のキーボードショートカットを、command・control・fn の役割の違いから整理した一覧。Karabiner-Elements でキーを割り当てる前の下調べとしてまとめた。"
+tags: [keyboard]
 ---
 
 karabiner-elements でのより良いキーマッピングを求め、Macのキーボードショートカットを把握しておく。Mac の思想を知る。
