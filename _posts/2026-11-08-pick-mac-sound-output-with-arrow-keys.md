@@ -116,3 +116,5 @@ Finderに出させればフォーカスは取れる。ただ、閉じた後もFi
 最初は「コントロールセンターを開けば同じことができる」と思っていたけど、欲しかったのはパネルそのものではなく、「1キーで出して矢印で選んで Enter」という手の動きのほうだった。そこに気づいてからは、見た目がWindowsに似ているかどうかはどうでもよくなった。
 
 フォーカスの件は、`activate` を書けば前に出るものだと思い込んでいたのが敗因。`osascript` から出すダイアログで同じ目にあったら、`.app` にして `open` するのを試してみてほしい。
+
+右 `command` + `H` で Chrome の翻訳を切り替えるスクリプトも、同じ「右 `command` + 1 キー → AppleScript」の仕組みで作っている（[Chromeの翻訳を1キーでトグルするAppleScript]({% post_url 2026-11-07-chrome-translate-toggle-applescript %})）。右 `command` に何を割り当てているかの全体像は [seiha式キーバインド]({% post_url 2026-11-22-keybindings-that-keep-hands-on-home-row %}) にまとめた。

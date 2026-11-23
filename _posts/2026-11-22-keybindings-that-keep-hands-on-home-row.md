@@ -78,7 +78,7 @@ Aの左にある`control`を押しながら、右手の`i` / `j` / `k` / `l`で�
 
 「上げる」は上の段、「左」は左の指。これくらい単純にしておくと、使わない期間があっても思い出せる。
 
-ちなみに右`command` + `a`で音声の出力先を選ぶ、みたいな凝った割り当てもある（[Macの音声出力先を1キーで出して矢印キーで選ぶ]({% post_url 2026-11-08-pick-mac-sound-output-with-arrow-keys %})）。この手のものは別のツールやスクリプトに頼っているので、seiha式の本体からは外している。
+ちなみに右`command` + `a`で音声の出力先を選ぶ（[Macの音声出力先を1キーで出して矢印キーで選ぶ]({% post_url 2026-11-08-pick-mac-sound-output-with-arrow-keys %})）、右`command` + `h`でChromeの翻訳を切り替える（[Chromeの翻訳を1キーでトグルするAppleScript]({% post_url 2026-11-07-chrome-translate-toggle-applescript %})）、みたいな凝った割り当てもある。この手のものは別のツールやスクリプトに頼っているので、seiha式の本体からは外している。
 
 ## 代償
 
