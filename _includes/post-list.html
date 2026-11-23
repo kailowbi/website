@@ -1,5 +1,5 @@
 {%- comment -%}
-  記事一覧。Blog ページとトップページで共用する。
+  記事一覧(Zenn/Qiita のようにタイトルと日付だけ)。Blog ページとトップページで共用する。
   include.limit を渡すと新しい順にその件数だけ表示する。
   Markdown ページ内でも HTML ブロックが途切れないよう、空行を出さないこと。
 {%- endcomment -%}
@@ -11,10 +11,6 @@
 <a class="post-item-link" href="{{ post.url | relative_url }}">
 <span class="post-item-title">{{ post.title | escape }}</span>
 <time class="post-item-date" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y-%m-%d" }}</time>
-{%- assign summary = post.excerpt | strip_html | strip_newlines | strip -%}
-{%- if summary != "" -%}
-<span class="post-item-excerpt">{{ summary | truncate: 110 }}</span>
-{%- endif -%}
 </a>
 </li>
 {%- endfor -%}
