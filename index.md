@@ -2,6 +2,7 @@
 layout: page
 title: ホーム
 permalink: /
+hide_title: true
 ---
 
 ## ようこそ

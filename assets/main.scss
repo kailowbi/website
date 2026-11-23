@@ -16,11 +16,14 @@ $base-font-family: -apple-system, BlinkMacSystemFont,
 // リンク色をテーマ既定の青からサイトのアクセントカラーにそろえる
 $brand-color: {{ site.primary_color }};
 
-@import "minima";
+// 文字色・グレーを GitHub/Zenn に近い、少し青みのあるニュートラルな色にする
+$text-color: #1f2328;
+$background-color: #ffffff;
+$grey-color: #6e7781;
+$grey-color-light: #e5e7eb;
+$grey-color-dark: #424a53;
 
-.site-header {
-  border-top: 5px solid {{ site.primary_color }};
-}
+@import "minima";
 
 // Safari 26 以降は theme-color メタタグを廃止し、body の background-color を
 // タブ/ツールバー色の参照元にするため、meta タグと合わせて指定する
@@ -192,6 +195,239 @@ h2 + .post-list {
   margin-top: 0.3em;
   color: $grey-color;
   @include relative-font-size(0.8);
+}
+
+// ==========================================================================
+// モダンな見た目への調整(装飾は増やさず、余白・線・文字の詰め方で整える)
+// ==========================================================================
+
+::selection {
+  background-color: rgba(143, 58, 58, 0.15);
+}
+
+// 和文の見出しは字間を詰める(palt)と締まって見える
+.site-title,
+.post-title,
+.page-heading,
+.post-content h1,
+.post-content h2,
+.post-content h3,
+.post-item-title {
+  font-feature-settings: "palt";
+  letter-spacing: 0.02em;
+}
+
+// ヘッダー: 上の太い線をやめ、スクロールしても上に残る白いバーにする
+// (body の背景はアクセントカラーなので、半透明にすると赤く透けてしまう)
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  min-height: 0;
+  border-top: 0;
+  border-bottom: 1px solid $grey-color-light;
+  background-color: $background-color;
+
+  .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+
+    // minima の clearfix 用 ::after が flex の要素扱いになり、メニューが右端に寄らなくなるので消す
+    &::after {
+      display: none;
+    }
+  }
+}
+
+.site-title {
+  float: none;
+  line-height: 1;
+  letter-spacing: 0;
+  @include relative-font-size(1.25);
+
+  &,
+  &:visited {
+    color: $text-color;
+  }
+}
+
+.site-nav {
+  float: none;
+  line-height: 1;
+
+  .page-link {
+    color: $grey-color;
+    @include relative-font-size(0.875);
+    transition: color 0.15s ease;
+
+    &:hover {
+      color: $text-color;
+      text-decoration: none;
+    }
+
+    &:not(:last-child) {
+      margin-right: 24px;
+    }
+  }
+}
+
+// スマホは2段(サイト名/メニュー)にし、画面を狭めないよう追従させない
+@include media-query($on-palm) {
+  .site-header {
+    position: static;
+
+    .wrapper {
+      display: block;
+      height: auto;
+    }
+  }
+
+  .site-title {
+    padding-top: 18px;
+  }
+
+  .site-nav {
+    padding: 14px 0 16px;
+
+    .page-link:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
+}
+
+.page-content {
+  padding: ($spacing-unit * 1.6) 0 ($spacing-unit * 2.4);
+
+  @include media-query($on-palm) {
+    padding: $spacing-unit 0 ($spacing-unit * 1.6);
+  }
+}
+
+// 記事タイトル: 大きめ・字間を詰めて、日付との間に余白
+.post-title,
+.page-heading {
+  letter-spacing: 0.01em;
+  @include relative-font-size(2);
+
+  @include media-query($on-palm) {
+    @include relative-font-size(1.5);
+  }
+}
+
+.post-header {
+  margin-bottom: $spacing-unit * 1.4;
+
+  .post-meta {
+    margin-top: 0.6em;
+  }
+}
+
+.post-content {
+  h1, h2 {
+    border-bottom-color: $grey-color-light;
+  }
+
+  // 本文中のリンクは下線を少し離して細く引く
+  a {
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.2em;
+    text-decoration-color: rgba(143, 58, 58, 0.4);
+    transition: text-decoration-color 0.15s ease;
+
+    &:hover {
+      text-decoration-color: currentColor;
+    }
+  }
+
+  // インラインコード: 色付きの背景をやめ、薄いグレーに
+  :not(pre) > code {
+    background-color: #eff1f3;
+    color: $text-color;
+    border-radius: 6px;
+  }
+
+  // コードブロックの角を本文の部品とそろえる
+  div.highlighter-rouge {
+    border-radius: 10px;
+  }
+
+  // 表: しま模様をやめ、細い罫線と角丸だけにする
+  table {
+    border: 1px solid $grey-color-light;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 8px;
+
+    th, td {
+      border: 0;
+      border-bottom: 1px solid $grey-color-light;
+      padding: 0.6em 1em;
+    }
+
+    th {
+      background-color: #f6f8fa;
+      font-weight: 600;
+    }
+
+    th + th,
+    td + td {
+      border-left: 1px solid $grey-color-light;
+    }
+
+    tr:last-child td {
+      border-bottom: 0;
+    }
+
+    tr:nth-child(even) {
+      background-color: transparent;
+    }
+  }
+
+  img {
+    border-radius: 8px;
+  }
+}
+
+// トップページなど、本文の先頭にある見出しの上に余白を空けない
+.post-content > :first-child {
+  margin-top: 0;
+}
+
+// 記事一覧: 本文リンク用の下線は付けず、ホバー時にタイトルの色だけ変える
+.post-content .post-item-link {
+  text-decoration: none;
+}
+
+.post-item-title {
+  transition: color 0.15s ease;
+}
+
+.post-item-link:hover .post-item-title {
+  text-decoration: none;
+}
+
+// シェアボタンを丸みのあるボタンに
+.share-button-x {
+  border-radius: 999px;
+  padding: 0.3em 1em;
+}
+
+// フッター: 白背景のまま、中央寄せの小さな文字で控えめに
+.site-footer {
+  padding: ($spacing-unit * 1.2) 0;
+  border-top: 1px solid $grey-color-light;
+  text-align: center;
+
+  .footer-heading {
+    @include relative-font-size(1);
+  }
+
+  .back-to-top {
+    margin-top: $spacing-unit * 0.5;
+  }
 }
 
 // ==========================================================================
