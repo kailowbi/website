@@ -338,8 +338,8 @@ $card-padding: 40px;
     max-width: calc(#{$content-width} - (#{$spacing-unit} * 2) + (#{$card-padding} * 2));
 
     @include media-query($on-palm) {
-      padding-right: 12px;
-      padding-left: 12px;
+      padding-right: 0;
+      padding-left: 0;
     }
   }
 }
@@ -354,8 +354,12 @@ $card-padding: 40px;
     padding: 32px;
   }
 
+  // スマホは Zenn/Qiita と同じくカードを画面幅いっぱいにし、外側の余白で本文を狭めない
   @include media-query($on-palm) {
     padding: 24px 20px;
+    border-right: 0;
+    border-left: 0;
+    border-radius: 0;
   }
 }
 
