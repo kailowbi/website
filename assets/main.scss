@@ -23,7 +23,26 @@ $grey-color: #6e7781;
 $grey-color-light: #e5e7eb;
 $grey-color-dark: #424a53;
 
+// 本文幅は max-width = $content-width - 60px。1行を約42字(Qiita 並み)に抑えて 680px にする
+$content-width: 740px;
+
 @import "minima";
+
+// minima は 800px 以下で左右の余白を 15px に詰め、本文が画面端まで広がって窮屈になるので広げる
+@include media-query($on-laptop) {
+  .wrapper {
+    max-width: calc(#{$content-width} - (#{$spacing-unit} * 2));
+    padding-right: 24px;
+    padding-left: 24px;
+  }
+}
+
+@include media-query($on-palm) {
+  .wrapper {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+}
 
 // Safari 26 以降は theme-color メタタグを廃止し、body の background-color を
 // タブ/ツールバー色の参照元にするため、meta タグと合わせて指定する
