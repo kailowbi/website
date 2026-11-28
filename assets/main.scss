@@ -23,7 +23,26 @@ $grey-color: #6e7781;
 $grey-color-light: #e5e7eb;
 $grey-color-dark: #424a53;
 
+// 本文幅は max-width = $content-width - 60px。1行を約42字に抑えて 680px にする
+$content-width: 740px;
+
 @import "minima";
+
+// minima は 800px 以下で左右の余白を 15px に詰め、本文が画面端まで広がって窮屈になるので広げる
+@include media-query($on-laptop) {
+  .wrapper {
+    max-width: calc(#{$content-width} - (#{$spacing-unit} * 2));
+    padding-right: 24px;
+    padding-left: 24px;
+  }
+}
+
+@include media-query($on-palm) {
+  .wrapper {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+}
 
 // Safari 26 以降は theme-color メタタグを廃止し、body の background-color を
 // タブ/ツールバー色の参照元にするため、meta タグと合わせて指定する
@@ -37,7 +56,6 @@ body {
 }
 
 .site-header,
-.page-content,
 .site-footer {
   background-color: $background-color;
 }
@@ -306,6 +324,38 @@ h2 + .post-list {
 
   @include media-query($on-palm) {
     padding: $spacing-unit 0 ($spacing-unit * 1.6);
+  }
+}
+
+// 白一色だと本文の範囲がつかみにくいので、薄いグレーの地に白いカードを置く。
+// 枠線や影は付けず、地との色の差だけで区切る。カードの内側の余白ぶん wrapper を広げ、本文幅は 680px に保つ
+$card-padding: 40px;
+
+.page-content {
+  background-color: #f5f6f7;
+
+  .wrapper {
+    max-width: calc(#{$content-width} - (#{$spacing-unit} * 2) + (#{$card-padding} * 2));
+  }
+
+  // スマホは画面が狭くカードの外側に余白を取る余裕がないので、カードをやめて白一面にする
+  @include media-query($on-palm) {
+    background-color: $background-color;
+  }
+}
+
+.post {
+  padding: $card-padding;
+  border-radius: 12px;
+  background-color: $background-color;
+
+  @include media-query($on-laptop) {
+    padding: 32px;
+  }
+
+  @include media-query($on-palm) {
+    padding: 0;
+    border-radius: 0;
   }
 }
 
