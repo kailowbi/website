@@ -327,8 +327,8 @@ h2 + .post-list {
   }
 }
 
-// 白一色だと本文の範囲がつかみにくいので、Zenn/Qiita のようにグレーの地に白いカードを置く。
-// カードの内側の余白ぶん wrapper を広げ、本文幅はヘッダーと同じ 680px に保つ
+// 白一色だと本文の範囲がつかみにくいので、Qiita のように薄いグレーの地に白いカードを置く。
+// 枠線や影は付けず、地との色の差だけで区切る。カードの内側の余白ぶん wrapper を広げ、本文幅は 680px に保つ
 $card-padding: 40px;
 
 .page-content {
@@ -336,17 +336,16 @@ $card-padding: 40px;
 
   .wrapper {
     max-width: calc(#{$content-width} - (#{$spacing-unit} * 2) + (#{$card-padding} * 2));
+  }
 
-    @include media-query($on-palm) {
-      padding-right: 0;
-      padding-left: 0;
-    }
+  // スマホは画面が狭くカードの外側に余白を取る余裕がないので、Zenn/Qiita と同じくカードをやめて白一面にする
+  @include media-query($on-palm) {
+    background-color: $background-color;
   }
 }
 
 .post {
   padding: $card-padding;
-  border: 1px solid $grey-color-light;
   border-radius: 12px;
   background-color: $background-color;
 
@@ -354,11 +353,8 @@ $card-padding: 40px;
     padding: 32px;
   }
 
-  // スマホは Zenn/Qiita と同じくカードを画面幅いっぱいにし、外側の余白で本文を狭めない
   @include media-query($on-palm) {
-    padding: 24px 20px;
-    border-right: 0;
-    border-left: 0;
+    padding: 0;
     border-radius: 0;
   }
 }
