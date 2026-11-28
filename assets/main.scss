@@ -56,7 +56,6 @@ body {
 }
 
 .site-header,
-.page-content,
 .site-footer {
   background-color: $background-color;
 }
@@ -325,6 +324,38 @@ h2 + .post-list {
 
   @include media-query($on-palm) {
     padding: $spacing-unit 0 ($spacing-unit * 1.6);
+  }
+}
+
+// 白一色だと本文の範囲がつかみにくいので、Zenn/Qiita のようにグレーの地に白いカードを置く。
+// カードの内側の余白ぶん wrapper を広げ、本文幅はヘッダーと同じ 680px に保つ
+$card-padding: 40px;
+
+.page-content {
+  background-color: #f5f6f7;
+
+  .wrapper {
+    max-width: calc(#{$content-width} - (#{$spacing-unit} * 2) + (#{$card-padding} * 2));
+
+    @include media-query($on-palm) {
+      padding-right: 12px;
+      padding-left: 12px;
+    }
+  }
+}
+
+.post {
+  padding: $card-padding;
+  border: 1px solid $grey-color-light;
+  border-radius: 12px;
+  background-color: $background-color;
+
+  @include media-query($on-laptop) {
+    padding: 32px;
+  }
+
+  @include media-query($on-palm) {
+    padding: 24px 20px;
   }
 }
 
