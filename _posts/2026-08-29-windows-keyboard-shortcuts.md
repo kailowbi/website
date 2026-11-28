@@ -151,5 +151,10 @@ Windowsのキーボードショートカットを把握しておく。Windows �
 | `Win + P` | プロジェクション（複数ディスプレイ）表示 |
 | `Win + F` | フィードバックHubを開く |
 
+
+### 🛠️ 自分の Windows での使い方
+
+Mac と同じ物理キーに同じ操作が来るように、Windows では AutoHotkey でキーを揃えている。考え方は [seiha式キーバインド]({% post_url 2026-11-22-keybindings-that-keep-hands-on-home-row %}) と同じで、Caps Lock の位置を control、スペース近くの親指キーを command と読み替えればいい。
+
 ---
 ※参考文献 https://support.microsoft.com/ja-jp/windows/windows-%E3%81%AE-%E3%82%AD%E3%83%BC%E3%83%9C%E3%83%BC%E3%83%89-%E3%82%B7%E3%83%A7%E3%83%BC%E3%83%88%E3%82%AB%E3%83%83%E3%83%88-dcc61a57-8ff0-cffe-9796-cb9706c75eec
